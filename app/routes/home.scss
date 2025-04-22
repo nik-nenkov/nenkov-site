@@ -166,7 +166,7 @@ footer {
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 20px; /* Default gap for larger screens */
 
     li {
       display: inline;
@@ -179,7 +179,7 @@ footer {
         height: 60px;
         background: rgba(255, 255, 255, 0.1); /* Transparent white for modern feel */
         border-radius: 50%;
-        border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+        border: 1px solid $color-accent; /* Subtle border */
         color: #ffffff;
         text-decoration: none;
         font-size: 28px;
@@ -202,5 +202,38 @@ footer {
     margin-top: 20px;
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.8); /* Subtle text color */
+  }
+
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .social-links {
+      gap: 15px; /* Reduce gap for tablets */
+    }
+
+    .social-links li a {
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+
+      svg {
+        font-size: 24px;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .social-links {
+      gap: 10px; /* Further reduce gap for mobile phones */
+    }
+
+    .social-links li a {
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+
+      svg {
+        font-size: 20px;
+      }
+    }
   }
 }
