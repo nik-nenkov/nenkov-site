@@ -9,8 +9,8 @@ export default function Home() {
           <img src="/nik.jpg" alt="Nikolay Nenkov" className="profile-photo" />
           <div className="contact-info">
             <h1>Nikolay Nenkov</h1>
-            <p>Email: <a href="mailto:nik.nenkov@icloud.com">nik.nenkov@icloud.com</a></p>
-            <p>Phone: +359 890 138 750</p>
+            <p>✉ <a href="mailto:nik.nenkov@icloud.com">nik.nenkov@icloud.com</a></p>
+            <p>🖁 +359 890 138 750</p>
           </div>
         </div>
       </header>
