@@ -18,17 +18,59 @@
   }
 }
 
-.App-header {
-  background-color: #003300; /* Professional dark green */
-  min-height: 50vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.App-header {/* Absolute path for public folder */
+  background-image: url('background.jpeg'); 
+  background-size: cover;
+  background-position: center;
+  min-height: 22rem;
   color: white;
-  padding: 20px;
-  text-align: left; /* Align text to the left */
+  text-align: left;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+
+  @media (min-width: 768px) {
+    padding: 3rem 2rem;
+  }
+  @media (min-width: 992px) {
+    padding: 5rem 4rem;
+  }
+  @media (min-width: 1200px) {
+    padding: 7rem 4rem;
+  }
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 2px solid #ffcc00; /* Optional border for styling */
+}
+
+.contact-info h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.contact-info a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
 }
 
 .App-link {

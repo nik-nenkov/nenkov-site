@@ -1,11 +1,12 @@
-import './App.scss';
+import React from "react";
+import "./home.scss";
 
-function App() {
+export default function Home() {
   return (
     <div className="App">
       <header className="App-header">
         <div className="profile-container">
-          <img src="nik.jpg" alt="Nikolay Nenkov" className="profile-photo" />
+          <img src="/nik.jpg" alt="Nikolay Nenkov" className="profile-photo" />
           <div className="contact-info">
             <h1>Nikolay Nenkov</h1>
             <p>Email: <a href="mailto:nik.nenkov@icloud.com">nik.nenkov@icloud.com</a></p>
@@ -53,5 +54,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
