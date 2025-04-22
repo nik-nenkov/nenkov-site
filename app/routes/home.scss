@@ -19,7 +19,7 @@
 }
 
 .App-header {/* Absolute path for public folder */
-  background-image: url('background.jpeg'); 
+  background-image: url('/background.jpeg'); 
   background-size: cover;
   background-position: center;
   min-height: 22rem;
