@@ -10,14 +10,18 @@ export default function Home() {
           <div className="contact-info">
             <h1>Nikolay Nenkov</h1>
             <p>✉ <a href="mailto:nik.nenkov@icloud.com">nik.nenkov@icloud.com</a></p>
-            <p>🖁 +359 890 138 750</p>
+            <p>☏ +359 890 138 750</p>
           </div>
         </div>
       </header>
       <main>
         <section>
           <h2>Personal Profile</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+          <p>
+              As an experienced full-stack developer, capable of supporting and extending your existing IT systems, and designing and implementing new ones, I can contribute to your organization by reducing long-term costs, organizing your documentation, integrating third-party software and systems, and leading junior developers.
+              <br/>
+              My goals are centred around clear communication, synchronising people with different roles onsite and remotely, and working in stakeholders' best interests. Interdisciplinary knowledge gained throughout the years is allowing me to ask better questions, look at the greater scale of things as well as improving and fixing the details expected by the designers, managers, DevOps and QA teams, and customers.
+              </p>
         </section>
         <section>
           <h2>Work Experience</h2>

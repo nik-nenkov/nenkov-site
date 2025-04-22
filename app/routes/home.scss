@@ -44,6 +44,9 @@
 .profile-container {
   display: flex;
   align-items: center;
+  @media (max-width: 512px) {
+    flex-flow: column;
+  }
 }
 
 .profile-photo {
