@@ -31,7 +31,7 @@
   color: white;
   text-align: left;
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: space-between;
   padding: $header-padding-sm;
 
@@ -50,6 +50,7 @@
 .profile-container {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   @media (max-width: 512px) {
     flex-flow: column;
   }
@@ -71,6 +72,7 @@
 
 .contact-info p {
   margin: 5px 0;
+  color: $color-accent;
   font-size: $base-font-size;
 }
 
@@ -100,12 +102,15 @@
 // --- Additional Global Elements ---
 main {
   padding: 20px;
-  max-width: 800px;
+  max-width: 840px;
   margin: 0 auto;
 }
 
 section {
   margin-bottom: 30px;
+  @media (prefers-color-scheme: dark) {
+    color: lightgrey !important; /* Ensure header is visible in dark mode */
+  }
 }
 
 section h2 {
@@ -115,6 +120,10 @@ section h2 {
   padding-bottom: 5px;
   margin-bottom: 15px;
   text-align: left;
+  
+  @media (prefers-color-scheme: dark) {
+    color: rgb(116, 167, 129) !important; /* Ensure header is visible in dark mode */
+  }
 }
 
 section p,
@@ -122,6 +131,9 @@ section ul {
   font-size: $base-font-size;
   margin: 10px 0;
   text-align: left;
+  @media (prefers-color-scheme: dark) {
+    color: lightgrey !important; /* Ensure header is visible in dark mode */
+  }
 }
 
 ul {
@@ -137,12 +149,18 @@ ul li h3 {
   font-size: 1.2rem;
   margin: 0;
   color: $color-text;
+  @media (prefers-color-scheme: dark) {
+    color: lightgrey !important; /* Ensure header is visible in dark mode */
+  }
 }
 
 ul li p {
   margin: 5px 0;
   font-size: $small-font-size;
   color: #555;
+  @media (prefers-color-scheme: dark) {
+    color: lightgray !important; /* Ensure header is visible in dark mode */
+  }
 }
 
 footer {
@@ -154,7 +172,7 @@ footer {
 
 .footer {
   background: url('/green.jpg') repeat; /* Repeating image background */
-  color: #ffffff; /* White text for contrast */
+  color: #ffffff; /* Default white text for contrast */
   padding: 30px 0;
   text-align: center;
   border-top: 2px solid rgba(255, 255, 255, 0.2); /* Subtle border for separation */

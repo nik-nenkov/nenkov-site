@@ -12,8 +12,12 @@ export default function Home() {
           <img src="/nik.jpg" alt="Nikolay Nenkov" className="profile-photo" />
           <div className="contact-info">
             <h1>Nikolay Nenkov</h1>
-            <p>✉ <a href="mailto:nik.nenkov@icloud.com">nik.nenkov@icloud.com</a></p>
-            <p>☏ +359 890 138 750</p>
+            <p>
+              <FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:nik.nenkov@icloud.com">nik.nenkov@icloud.com</a>
+            </p>
+            <p>
+              <FontAwesomeIcon icon={faPhone} /> +359 890 138 750
+            </p>
           </div>
         </div>
       </header>
@@ -21,9 +25,7 @@ export default function Home() {
         <section>
           <h2>Personal Profile</h2>
           <p>
-            As an experienced full-stack developer, capable of supporting and extending your existing IT systems, and designing and implementing new ones, I can contribute to your organization by reducing long-term costs, organizing your documentation, integrating third-party software and systems, and leading junior developers.
-            <br />
-            My goals are centred around clear communication, synchronising people with different roles onsite and remotely, and working in stakeholders' best interests. Interdisciplinary knowledge gained throughout the years is allowing me to ask better questions, look at the greater scale of things as well as improving and fixing the details expected by the designers, managers, DevOps and QA teams, and customers.
+            Experienced full-stack developer capable of supporting and extending IT systems, designing and implementing new ones, and reducing long-term costs.
           </p>
         </section>
         <section>
