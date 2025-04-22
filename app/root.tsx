@@ -21,6 +21,14 @@ export const links: Route.LinksFunction = () => [
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
   },
+  { rel: "icon", type: "image/jpg", href: "favicon/favicon-32x32.jpg" },
+  { rel: "apple-touch-icon", sizes: "48x48", href: "favicon/favicon-48x48.jpg" },
+  { rel: "apple-touch-icon", sizes: "72x72", href: "favicon/favicon-72x72.jpg" },
+  { rel: "apple-touch-icon", sizes: "96x96", href: "favicon/favicon-96x96.jpg" },
+  { rel: "apple-touch-icon", sizes: "256x256", href: "favicon/favicon-256x256.jpg" },
+  { rel: "apple-touch-icon", sizes: "384x384", href: "favicon/favicon-384x384.jpg" },
+  { rel: "apple-touch-icon", sizes: "512x512", href: "favicon/favicon-512x512.jpg" },
+  { rel: "manifest", href: "manifest.json", crossOrigin: "anonymous" },
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -29,10 +37,14 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="description" content="Nikolay Nenkov's CV website, built with React and Vite." />
+        <title>Nik CV</title>
         <Meta />
         <Links />
       </head>
       <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
         {children}
         <ScrollRestoration />
         <Scripts />
