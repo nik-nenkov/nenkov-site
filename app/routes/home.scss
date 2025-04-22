@@ -1,8 +1,11 @@
+@use "/app/styles/constants" as *;
+
+// --- Global Styles ---
 .App {
   text-align: center;
-  font-family: 'Arial', sans-serif;
+  font-family: $font-primary;
   line-height: 1.6;
-  color: #333;
+  color: $color-text;
   margin: 0;
   padding: 0;
 }
@@ -18,29 +21,31 @@
   }
 }
 
-.App-header {/* Absolute path for public folder */
-  background-image: url('/background.jpeg'); 
+// --- Header Styles ---
+.App-header {
+  background-image: url('/background.jpeg'); /* Absolute path for public folder */
   background-size: cover;
   background-position: center;
-  min-height: 22rem;
+  min-height: $header-min-height;
   color: white;
   text-align: left;
   display: flex;
   align-items: start;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: $header-padding-sm;
 
   @media (min-width: 768px) {
-    padding: 3rem 2rem;
+    padding: $header-padding-md;
   }
   @media (min-width: 992px) {
-    padding: 5rem 4rem;
+    padding: $header-padding-lg;
   }
   @media (min-width: 1200px) {
-    padding: 7rem 4rem;
+    padding: $header-padding-xl;
   }
 }
 
+// --- Profile Container ---
 .profile-container {
   display: flex;
   align-items: center;
@@ -49,26 +54,27 @@
   }
 }
 
+// --- Other Elements ---
 .profile-photo {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   margin-right: 20px;
-  border: 2px solid #ffcc00; /* Optional border for styling */
+  border: 2px solid $color-accent;
 }
 
 .contact-info h1 {
-  font-size: 2rem;
+  font-size: $header-h1-size;
   margin: 0;
 }
 
 .contact-info p {
   margin: 5px 0;
-  font-size: 1rem;
+  font-size: $base-font-size;
 }
 
 .contact-info a {
-  color: #ffcc00;
+  color: $color-accent;
   text-decoration: none;
 }
 
@@ -80,6 +86,7 @@
   color: #61dafb;
 }
 
+// --- Keyframes ---
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -89,25 +96,7 @@
   }
 }
 
-.App-header h1 {
-  font-size: 2rem; /* Reduced font size for a more compact header */
-  margin: 0;
-}
-
-.App-header p {
-  margin: 5px 0;
-  font-size: 1rem;
-}
-
-.App-header a {
-  color: #ffcc00; /* Gold for contrast */
-  text-decoration: none;
-}
-
-.App-header a:hover {
-  text-decoration: underline;
-}
-
+// --- Additional Global Elements ---
 main {
   padding: 20px;
   max-width: 800px;
@@ -120,18 +109,18 @@ section {
 
 section h2 {
   font-size: 1.8rem;
-  color: #003300; /* Match the dark green theme */
-  border-bottom: 2px solid #ffcc00;
+  color: #003300;
+  border-bottom: 2px solid $color-accent;
   padding-bottom: 5px;
   margin-bottom: 15px;
-  text-align: left; /* Align section headers to the left */
+  text-align: left;
 }
 
 section p,
 section ul {
-  font-size: 1rem;
+  font-size: $base-font-size;
   margin: 10px 0;
-  text-align: left; /* Align content to the left */
+  text-align: left;
 }
 
 ul {
@@ -146,18 +135,18 @@ ul li {
 ul li h3 {
   font-size: 1.2rem;
   margin: 0;
-  color: #333;
+  color: $color-text;
 }
 
 ul li p {
   margin: 5px 0;
-  font-size: 0.9rem;
+  font-size: $small-font-size;
   color: #555;
 }
 
 footer {
   text-align: center;
   margin-top: 20px;
-  font-size: 0.9rem;
-  color: #777;
+  font-size: $small-font-size;
+  color: $color-light;
 }
