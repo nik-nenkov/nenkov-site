@@ -31,7 +31,7 @@
   color: white;
   text-align: left;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
   padding: $header-padding-sm;
 
@@ -53,6 +53,7 @@
   flex-wrap: wrap;
   @media (max-width: 512px) {
     flex-flow: column;
+    align-self: start;
   }
 }
 
@@ -87,16 +88,6 @@
 
 .App-link {
   color: #61dafb;
-}
-
-// --- Keyframes ---
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 // --- Additional Global Elements ---
