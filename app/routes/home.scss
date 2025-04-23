@@ -58,6 +58,9 @@
     h1 {
       font-size: $font-size-h1;
       margin: 0;
+      @media (max-width: $screen-sm) {
+        font-size: $font-size-h2;
+      }
     }
 
     p {
