@@ -9,6 +9,7 @@ import {
 
 import type { Route } from "./+types/root";
 import "./root.scss";
+import AppFooter from "./components/footer/app-footer";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -50,6 +51,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
         {children}
+        <AppFooter />
         <ScrollRestoration />
         <Scripts />
       </body>

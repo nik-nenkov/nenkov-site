@@ -20,9 +20,39 @@ export default function Home() {
           <h2>Work Experience</h2>
           <ul>
             <li>
-              <h3>Job Title - Company Name</h3>
-              <p>Month Year - Month Year</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h3>Project Delivery Manager - Freelancer</h3>
+              <p>Feb 2025 - Present · Remote</p>
+              <p>Assisting teams with project setup, repository management, design documentation, and deployment strategies.</p>
+            </li>
+            <li>
+              <h3>Full Stack Developer - PLAN A</h3>
+              <p>Sep 2024 - Feb 2025 · Remote</p>
+              <p>Maintained and extended legacy JAVA code, conducted software development with testing, and performed requirements analysis in an asynchronous work environment.</p>
+            </li>
+            <li>
+              <h3>Freelance Software Developer</h3>
+              <p>May 2023 - Aug 2024 · Hybrid</p>
+              <p>Delivered backend services, REST APIs, frontends, and business automation scripts while integrating third-party services like Azure Cognitive Services and Stripe.</p>
+            </li>
+            <li>
+              <h3>Full Stack Developer - Codexio</h3>
+              <p>Mar 2021 - Apr 2023 · Hybrid</p>
+              <p>Worked on projects in electronic payments, traffic engineering, and online gaming, collaborating with global teams.</p>
+            </li>
+            <li>
+              <h3>Application Developer - Schwarz Gruppe</h3>
+              <p>Feb 2020 - Nov 2020 · Remote</p>
+              <p>Developed tools for tracking business spendings, interacting with remote product owners and architects.</p>
+            </li>
+            <li>
+              <h3>Java Full Stack Developer - EPAM Systems</h3>
+              <p>May 2018 - Nov 2019 · On-site</p>
+              <p>Contributed to projects involving REST APIs, OAuth2.0 implementation, and JavaFX admin panels, while improving SDLC processes.</p>
+            </li>
+            <li>
+              <h3>Technology Consultant</h3>
+              <p>Aug 2008 - Apr 2018 · Hybrid</p>
+              <p>Provided software development, website maintenance, and tutoring services, enhancing client performance and academic success.</p>
             </li>
           </ul>
         </section>
@@ -62,7 +92,6 @@ export default function Home() {
           <p>Available upon request.</p>
         </section>
       </main>
-      <AppFooter />
     </div>
   );
 }

@@ -1,0 +1,63 @@
+@use "/app/styles/constants" as *;
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $color-dark;
+  color: $color-white;
+  padding: $padding-sm $padding-md;
+  box-shadow: $box-shadow-footer;
+
+  .back-button {
+    width: $social-link-size-sm;
+    height: $social-link-size-sm;
+    background-color: $color-dark;
+    border: $thin solid $color-accent;
+    border-radius: $border-radius-circle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: $box-shadow-footer;
+    transition: $bg-transition;
+
+    .arrow {
+      width: 12px;
+      height: 12px;
+      border: $thin solid $color-accent;
+      border-width: 2px 2px 0 0;
+      transform: rotate(-135deg);
+      transition: transform 0.3s ease;
+    }
+
+    &:hover {
+      background-color: $color-hover-dark;
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+
+    @media (max-width: $screen-sm) {
+      width: 30px;
+      height: 30px;
+
+      .arrow {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+
+  .title {
+    font-size: $font-size-h2;
+    color: $color-white;
+    text-align: center;
+    flex-grow: 1;
+
+    @media (max-width: $screen-sm) {
+      font-size: $font-size-base;
+    }
+  }
+}

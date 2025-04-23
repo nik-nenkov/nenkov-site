@@ -9,7 +9,7 @@ export default function ExpandableMenu() {
             </label>
             <nav className="menu">
                 <ul>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="/projects">Projects</a></li>
                     <li><a href="#courses">Courses</a></li>
                     <li><a href="#diagrams">Diagrams</a></li>
                 </ul>
