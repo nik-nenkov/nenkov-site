@@ -52,11 +52,11 @@ $border-radius-lg: 16px;
 $border-radius-circle: 50%;
 
 // --- Header ---
-$header-min-height: 22rem;
-$header-padding-sm: 1rem 2rem;
-$header-padding-md: 2rem 4rem;
-$header-padding-lg: 4rem 6rem;
-$header-padding-xl: 6rem 8rem;
+$header-min-height: 16rem;
+$header-padding-sm: 1rem 1rem 2rem 2rem;
+$header-padding-md: 2rem 2rem 4rem 4rem;
+$header-padding-lg: 3rem 3rem 6rem 6rem;
+$header-padding-xl: 4rem 4rem 8rem 8rem;
 
 // --- Social Links ---
 $social-link-size-sm: 40px;
@@ -70,12 +70,12 @@ $social-gap-sm: 10px;
 $box-shadow-footer: 0px -4px 15px rgba(0, 0, 0, 0.3);
 $box-shadow-hover: 0px 0px 10px rgba(255, 255, 255, 0.5);
 
-// --- Screen Sizes ---
-$screen-xs: 480px;
-$screen-sm: 768px;
-$screen-md: 992px;
-$screen-lg: 1200px;
-$screen-xl: 1440px;
+// --- Standard Screen Sizes ---
+$screen-xs: 480px; // Extra small devices (phones)
+$screen-sm: 768px; // Small devices (tablets)
+$screen-md: 992px; // Medium devices (desktops)
+$screen-lg: 1200px; // Large devices (large desktops)
+$screen-xl: 1440px; // Extra large devices (widescreens)
 
 
 // --- Breakpoints ---

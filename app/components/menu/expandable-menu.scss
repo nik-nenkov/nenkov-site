@@ -1,0 +1,139 @@
+@use "/app/styles/constants" as *;
+
+.expandable-menu {
+  z-index: 1000;
+  position: relative;
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .menu-button {
+    width: $social-link-size-sm;
+    height: $social-link-size-sm;
+    background-color: $color-dark;
+    border-radius: $border-radius-circle;
+    border: $thin solid $color-accent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    box-shadow: $box-shadow-footer;
+    transition: $bg-transition;
+
+    .arrow {
+      width: 12px;
+      height: 12px;
+      border: $thin solid $color-accent;
+      border-width: 2px 2px 0 0;
+      transform: rotate(45deg);
+      position: absolute;
+      transition: transform 0.3s ease;
+      
+    @media (max-width: $screen-sm) {
+        width: 10px;
+        height: 10px;
+      }
+      @media (max-width: 361px) {
+          height: 7px;
+          width: 7px;
+        }
+    }
+
+    &:hover {
+      background-color: $color-hover;
+      transform: scale(1.06);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+
+    @media (max-width: $screen-sm) {
+      width: 30px;
+      height: 30px;
+    }
+    
+    @media (max-width: 361px) {
+        height: 22px;
+        width: 22px;
+      }
+  }
+
+  .menu-toggle:checked + .menu-button .arrow {
+    transform: rotate(-135deg);
+  }
+
+  .menu {
+    position: absolute;
+    top: 50%;
+    right: calc(100% + $spacing-sm); // Position the menu to the left of the button with a small gap
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row; // Ensure items are in a row
+    align-items: center;
+    gap: $social-gap-lg; // Add space between menu items
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+
+    @media (max-width: 361px) {
+        right: calc(100% + $spacing-xs); 
+      }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex; // Ensure the list items are in a row
+      gap: $social-gap-lg; // Add space between list items
+      @media (max-width: $screen-sm) {
+        gap: $social-gap-sm; // Adjust gap for small screens
+      }
+      li {
+        margin: 0;
+        padding: 0;
+
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: $social-link-size-sm;
+          background: $color-pale;
+          border-radius: 1.5rem;
+          border: $thin solid $color-accent;
+          color: $color-white;
+          text-decoration: none;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+          font-size: $font-size-h3;
+          box-shadow: $box-shadow-footer;
+          transition: $bg-transition;
+          padding: 0 1rem;
+
+          &:hover {
+            background: $color-hover;
+            transform: scale(1.1);
+            box-shadow: $box-shadow-hover;
+          }
+          
+    @media (max-width: $screen-sm) {
+        height: 28px;
+        font-size: $font-size-small;
+      }
+      @media (max-width: 361px) {
+          height: 18px;
+          font-size: 12px;
+          padding: 3px 5px;
+        }
+        }
+      }
+    }
+  }
+
+  .menu-toggle:checked ~ .menu {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+

@@ -1,0 +1,95 @@
+@use "/app/styles/constants" as *;
+@use "sass:color";
+// --- Header Styles ---
+.App-header {
+    background-image: url('/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: $color-white;
+    text-align: left;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: $header-padding-sm;
+    min-height: 18rem; 
+    position: relative; // Enable positioning for child elements
+  
+    @media (min-width: $screen-xs) {
+      padding: $header-padding-sm;
+      min-height: 16rem; // Slightly larger for small screens
+    }
+    @media (min-width: $screen-sm) {
+      padding: $header-padding-md;
+      min-height: 12rem; // Adjusted for tablets
+    }
+    @media (min-width: $screen-md) {
+      padding: $header-padding-lg;
+      min-height: 9rem; // Adjusted for desktops
+    }
+    @media (min-width: $screen-lg) {
+      padding: $header-padding-xl;
+      min-height: 6rem; // Adjusted for large desktops
+    }
+
+    // Position the expandable menu
+    .expandable-menu {
+      position: absolute;
+      bottom: 20px; // Position 20px from the bottom of the header
+      right: 20px; // Position 20px from the right of the header
+    }
+  }
+  
+  // --- Profile Container ---
+  .profile-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  
+    @media (max-width: $screen-sm) {
+      flex-flow: column;
+      align-self: start;
+    }
+  
+    .profile-photo {
+      width: $photo-size-md;
+      height: $photo-size-md;
+      border-radius: $border-radius-circle;
+      margin-right: $spacing-md;
+      border: $thick solid $color-accent;
+  
+      @media (max-width: $screen-sm) {
+        width: 80px; // Smaller size for small screens
+        height: 80px;
+      }
+    }
+  
+    .contact-info {
+      h1 {
+        font-size: $font-size-h1;
+        margin: 0;
+  
+        @media (max-width: $screen-sm) {
+          font-size: $font-size-h2; // Adjusted for smaller screens
+        }
+      }
+  
+      p {
+        margin: $spacing-xs 0;
+        color: $color-accent;
+        font-size: $font-size-base;
+  
+        @media (max-width: $screen-sm) {
+          font-size: 0.9rem; // Slightly smaller for small screens
+        }
+      }
+  
+      a {
+        color: $color-accent;
+        text-decoration: none;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }

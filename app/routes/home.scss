@@ -11,80 +11,15 @@
   padding: 0;
 }
 
-// --- Header Styles ---
-.App-header {
-  background-image: url('/background.jpeg');
-  background-size: cover;
-  background-position: center;
-  min-height: $header-min-height;
-  color: $color-white;
-  text-align: left;
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-  padding: $header-padding-sm;
-
-  @media (min-width: $screen-sm) {
-    padding: $header-padding-md;
-  }
-  @media (min-width: $screen-md) {
-    padding: $header-padding-lg;
-  }
-  @media (min-width: $screen-lg) {
-    padding: $header-padding-xl;
-  }
-}
-
-// --- Profile Container ---
-.profile-container {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-
-  @media (max-width: $screen-sm) {
-    flex-flow: column;
-    align-self: start;
-  }
-
-  .profile-photo {
-    width: $photo-size-md;
-    height: $photo-size-md;
-    border-radius: $border-radius-circle;
-    margin-right: $spacing-md;
-    border: $thick solid $color-accent;
-  }
-
-  .contact-info {
-    h1 {
-      font-size: $font-size-h1;
-      margin: 0;
-      @media (max-width: $screen-sm) {
-        font-size: $font-size-h2;
-      }
-    }
-
-    p {
-      margin: $spacing-xs 0;
-      color: $color-accent;
-      font-size: $font-size-base;
-    }
-
-    a {
-      color: $color-accent;
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-}
-
 // --- Additional Global Elements ---
 main {
   padding: $padding-md;
   max-width: $scr-width-md;
   margin: 0 auto;
+
+  @media (max-width: $screen-sm) {
+    padding: $padding-sm; // Reduced padding for small screens
+  }
 }
 
 section {
@@ -105,6 +40,10 @@ section {
     @media (prefers-color-scheme: dark) {
       color: $color-heading-light;
     }
+
+    @media (max-width: $screen-sm) {
+      // font-size: $font-size-base; // Smaller font size for small screens
+    }
   }
 
   p,
@@ -115,6 +54,11 @@ section {
 
     @media (prefers-color-scheme: dark) {
       color: $color-text-light;
+    }
+
+    @media (max-width: $screen-sm) {
+      padding: 0 0.6rem;
+      font-size: 0.9rem; // Adjusted for small screens
     }
   }
 
@@ -133,6 +77,10 @@ section {
         @media (prefers-color-scheme: dark) {
           color: $color-text-light;
         }
+
+        @media (max-width: $screen-sm) {
+          font-size: $font-size-base; // Adjusted for small screens
+        }
       }
 
       p {
@@ -143,98 +91,9 @@ section {
         @media (prefers-color-scheme: dark) {
           color: $color-text-light;
         }
-      }
-    }
-  }
-}
 
-// --- Footer ---
-footer {
-  text-align: center;
-  margin-top: $margin-md;
-  font-size: $font-size-small;
-  color: $color-light;
-
-  &.footer {
-    background: url('/green.jpg') repeat;
-    color: $color-white;
-    padding: $padding-lg 0;
-    text-align: center;
-    border-top: $thick solid $color-dark;
-    box-shadow: $box-shadow-footer;
-
-    .social-links {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      gap: $social-gap-lg;
-
-      li {
-        display: inline;
-
-        a {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: $social-link-size-lg;
-          height: $social-link-size-lg;
-          background: $color-pale;
-          border-radius: $border-radius-circle;
-          border: $thin solid $color-accent;
-          color: $color-white;
-          text-decoration: none;
-          font-size: $font-size-h3;
-          transition: $bg-transition;
-
-          &:hover {
-            background: $color-hover;
-            transform: scale(1.2);
-            box-shadow: $box-shadow-hover;
-          }
-
-          svg {
-            font-size: $font-size-h3;
-          }
-        }
-      }
-    }
-
-    p {
-      margin-top: $margin-sm;
-      font-size: $font-size-small;
-      color: $color-text-light;
-    }
-
-    @media (max-width: $screen-sm) {
-      .social-links {
-        gap: $social-gap-md;
-
-        li a {
-          width: $social-link-size-md;
-          height: $social-link-size-md;
-          font-size: $font-size-base;
-
-          svg {
-            font-size: $font-size-base;
-          }
-        }
-      }
-    }
-
-    @media (max-width: $screen-xs) {
-      .social-links {
-        gap: $social-gap-sm;
-
-        li a {
-          width: $social-link-size-sm;
-          height: $social-link-size-sm;
-          font-size: $font-size-small;
-
-          svg {
-            font-size: $font-size-small;
-          }
+        @media (max-width: $screen-sm) {
+          font-size: 0.8rem; // Smaller font size for small screens
         }
       }
     }
