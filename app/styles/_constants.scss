@@ -1,17 +1,90 @@
-// --- Variables ---
-$font-primary: 'Arial', sans-serif;
+// --- Colors ---
 $color-text: #333;
+$color-mid: #555;
 $color-light: #777;
 $color-accent: #ffcc00;
-$header-min-height: 22rem;
+$color-white: #ffffff;
+$color-pale: rgba(255, 255, 255, 0.1);
+$color-dark: rgba(255, 255, 255, 0.2);
+$color-hover: rgba(255, 255, 255, 0.3);
+$color-hover-dark: rgba(255, 255, 255, 0.4);
+$color-background-light: #f9f9f9;
+$color-background-dark: #1a1a1a;
+$color-heading-light: rgb(116, 167, 129);
+$color-heading-dark: #003300;
+$color-text-light: rgba(255, 255, 255, 0.8);
 
-// Spacing values for header padding at various breakpoints
+// --- Fonts ---
+$font-primary: 'Arial', sans-serif;
+$font-code: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+
+// --- Font Sizes ---
+$font-size-h1: 2.5rem;
+$font-size-h2: 2rem;
+$font-size-h3: 1.5rem;
+$font-size-base: 1rem;
+$font-size-small: 0.9rem;
+
+// --- Spacing ---
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 2rem;
+$spacing-lg: 4rem;
+$spacing-xl: 6rem;
+
+// --- Margins and Paddings ---
+$margin-xs: 0.5rem;
+$margin-sm: 1rem;
+$margin-md: 2rem;
+$margin-lg: 4rem;
+$margin-xl: 6rem;
+
+$padding-xs: 0.5rem;
+$padding-sm: 1rem;
+$padding-md: 2rem;
+$padding-lg: 4rem;
+$padding-xl: 6rem;
+
+// --- Border Radii ---
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 16px;
+$border-radius-circle: 50%;
+
+// --- Header ---
+$header-min-height: 22rem;
 $header-padding-sm: 1rem 2rem;
 $header-padding-md: 2rem 4rem;
 $header-padding-lg: 4rem 6rem;
 $header-padding-xl: 6rem 8rem;
 
-// Font sizes
-$header-h1-size: 2rem;
-$base-font-size: 1rem;
-$small-font-size: 0.9rem;
+// --- Social Links ---
+$social-link-size-sm: 40px;
+$social-link-size-md: 50px;
+$social-link-size-lg: 60px;
+$social-gap-lg: 20px;
+$social-gap-md: 15px;
+$social-gap-sm: 10px;
+
+// --- Box Shadows ---
+$box-shadow-footer: 0px -4px 15px rgba(0, 0, 0, 0.3);
+$box-shadow-hover: 0px 0px 10px rgba(255, 255, 255, 0.5);
+
+// --- Screen Sizes ---
+$screen-xs: 480px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+$screen-xl: 1440px;
+
+
+// --- Breakpoints ---
+$thick: 2px;
+$thin: 1px;
+
+// --- Transitions ---
+$bg-transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+
+// --- Misc ---
+$photo-size-md: 100px;
+$scr-width-md: 840px;
