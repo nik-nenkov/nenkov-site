@@ -8,6 +8,7 @@
   color: $color-white;
   padding: $padding-sm $padding-md;
   box-shadow: $box-shadow-footer;
+  border-bottom: $thin solid $color-accent;
 
   .back-button {
     width: $social-link-size-sm;
