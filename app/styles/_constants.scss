@@ -1,17 +1,17 @@
 // --- Colors ---
-$color-text: #333;
-$color-mid: #555;
-$color-light: #777;
-$color-accent: #ffcc00;
-$color-white: #ffffff;
+$color-text: rgba(51, 51, 51, 1);
+$color-mid: rgba(85, 85, 85, 1);
+$color-light: rgba(119, 119, 119, 1);
+$color-accent: rgba(255, 204, 0, 1);
+$color-white: rgba(255, 255, 255, 1);
 $color-pale: rgba(255, 255, 255, 0.1);
-$color-dark: rgba(255, 255, 255, 0.2);
+$color-dark: rgba(0, 0, 0, 0.8);
 $color-hover: rgba(255, 255, 255, 0.3);
-$color-hover-dark: rgba(255, 255, 255, 0.4);
-$color-background-light: #f9f9f9;
-$color-background-dark: #1a1a1a;
-$color-heading-light: rgb(116, 167, 129);
-$color-heading-dark: #003300;
+$color-hover-dark: rgba(0, 0, 0, 0.6);
+$color-background-light: rgba(249, 249, 249, 1);
+$color-background-dark: rgba(26, 26, 26, 1);
+$color-heading-light: rgba(116, 167, 129, 1);
+$color-heading-dark: rgba(0, 51, 0, 1);
 $color-text-light: rgba(255, 255, 255, 0.8);
 
 // --- Fonts ---
@@ -19,9 +19,9 @@ $font-primary: 'Arial', sans-serif;
 $font-code: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 
 // --- Font Sizes ---
-$font-size-h1: 2.5rem;
-$font-size-h2: 2rem;
-$font-size-h3: 1.5rem;
+$font-size-h1: 2.4rem;
+$font-size-h2: 1.8rem;
+$font-size-h3: 1.4rem;
 $font-size-base: 1rem;
 $font-size-small: 0.9rem;
 
