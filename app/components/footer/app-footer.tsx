@@ -1,6 +1,6 @@
 import "./app-footer.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXTwitter, faFacebook, faLinkedin, faXing } from "@fortawesome/free-brands-svg-icons";
+import { faXTwitter, faFacebook, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 export default function AppFooter() {
@@ -13,11 +13,11 @@ export default function AppFooter() {
             <FontAwesomeIcon icon={faXTwitter} />
           </a>
         </li> */}
-        <li>
+        {/* <li>
           <a href="https://www.xing.com/profile/Nik_Nenkov" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faXing} />
           </a>
-        </li>
+        </li> */}
         <li>
           <a href="https://www.linkedin.com/in/nik-nenkov" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faLinkedin} />
@@ -26,6 +26,11 @@ export default function AppFooter() {
         <li>
           <a href="https://www.facebook.com/profile.php?id=100089466912748" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faFacebook} />
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/nik-nenkov" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faGithub} />
           </a>
         </li>
         <li>
