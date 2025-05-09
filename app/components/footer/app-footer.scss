@@ -39,11 +39,24 @@ footer {
           text-decoration: none;
           font-size: $font-size-h3;
           transition: $bg-transition;
+          
 
           &:hover {
             background: $color-hover;
             transform: scale(1.2);
             box-shadow: $box-shadow-hover;
+          }
+
+          @media (prefers-color-scheme: dark) {
+            border: $thick solid aquamarine;
+            color: aquamarine;
+            background-color: $color-pale-dark;
+
+            &:hover {
+              background: $color-pale-dark;
+              transform: scale(1.2);
+              box-shadow: $box-shadow-hover;
+            }
           }
 
           svg {

@@ -20,48 +20,51 @@ export default function Home() {
           <h2>Work Experience</h2>
           <ul>
             <li>
-              <h3>Project Delivery Manager | Freelance</h3>
-              <h4>Feb 2025 - Present | Remote</h4>
+              <h3>Full Stack Software Developer | Various Clients</h3>
+              <h4>May 2023 - Present</h4>
               <p>Assisting teams with project setup, repository management, 
                 design documentation, and deployment strategies.</p>
-            </li>
-            <li>
-              <h3>Full Stack Developer | PLAN A</h3>
-              <h4>Sep 2024 - Feb 2025 | Remote</h4>
               <p>Maintained and extended legacy JAVA code, conducted software 
                 development with testing, and performed requirements analysis 
                 in an asynchronous work environment.</p>
-            </li>
-            <li>
-              <h3>Freelance Software Developer | Various Clients</h3>
-              <h4>May 2023 - Aug 2024 | Hybrid</h4>
               <p>Delivered backend services, REST APIs, frontends, and business 
                 automation scripts while integrating third-party services like 
                 Azure Cognitive Services and Stripe.</p>
             </li>
             <li>
-              <h3>Full Stack Developer | Codexio</h3>
+              <h3>Full Stack Software Developer | CODEXIO Ltd.</h3>
               <h4>Mar 2021 - Apr 2023 | Hybrid</h4>
               <p>Worked on projects in electronic payments, traffic engineering, 
                 and online gaming, collaborating with global teams.</p>
             </li>
             <li>
-              <h3>Application Developer | Kaufland IT Hub</h3>
+              <h3>Java Web Service Developer | Kaufland Service IT HUB</h3>
               <h4>Feb 2020 - Nov 2020 | Remote</h4>
               <p>Developed tools for tracking business spendings, interacting with 
                 remote product owners and architects.</p>
             </li>
             <li>
-              <h3>Java Full Stack Developer | EPAM Systems</h3>
+                <h3>
+                  Java Full Stack Developer | <a href="https://investors.epam.com/stock-price/default.aspx" target="_blank" rel="noopener noreferrer">
+                  EPAM Systems, Inc.
+                  </a>
+                </h3>
               <h4>May 2018 - Nov 2019 | On-site</h4>
               <p>Contributed to projects involving REST APIs, OAuth2.0 implementation, 
                 and JavaFX admin panels, while improving SDLC processes.</p>
             </li>
             <li>
               <h3>Technology Consultant | Freelance</h3>
-              <h4>Aug 2008 - Apr 2018 | Hybrid</h4>
-              <p>Provided software development, website maintenance, and tutoring services, 
-                enhancing client performance and academic success.</p>
+              <h4>2009 - 2017</h4>
+              <p>Delivered software development, website maintenance, and tutoring services, 
+                driving client success and academic excellence. Engineered software for complex 
+                electrical engineering equations, built a CodeIgniter-based CMS for a local restaurant, 
+                and deployed MMORPG servers with SQL databases and user registration websites. 
+                Designed 3D CAD models in SolidWorks for furniture and machinery, tutored in IT, 
+                physics, math, chemistry, and programming, and developed a secure C++ CLI chat application. 
+                In winter 2016, conducted photovoltaic system calculations for solar energy solutions. 
+                In summer 2014, contributed to a startup in Varna, Bulgaria, as a Data Entry and QA Specialist, 
+                ensuring data accuracy and process quality in a fast-paced environment.</p>
             </li>
           </ul>
         </section>
