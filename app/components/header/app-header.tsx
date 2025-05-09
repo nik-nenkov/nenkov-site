@@ -8,15 +8,22 @@ export default function AppHeader() {
     return (
       <header className="App-header">
       <div className="profile-container">
-        <img src="/nik-avatar-bg.png" alt="Nikolay Nenkov" className="profile-photo" />
+        <img 
+          src="/nik-avatar-bg.png" 
+          alt="Nikolay Nenkov" 
+          className="profile-photo" 
+          title="Follow on LinkedIn"
+          onClick={() => window.open("https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=nik-nenkov", "_blank")}
+        />
         <div className="contact-info">
           <h1>Nikolay Nenkov</h1>
+            <p style={{ color: "gold" }}>Full Stack Software Developer</p>
           <p>
-            <FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:nik.nenkov@icloud.com">nik.nenkov@icloud.com</a>
+        <FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:nik.nenkov@icloud.com">nik.nenkov@icloud.com</a>
           </p>
-          <p>
-            <FontAwesomeIcon icon={faPhone} /> +359 890 138 750
-          </p>
+            <p>
+            <FontAwesomeIcon icon={faPhone} /> <a href="tel:+359890138750">+359 890 138 750</a>
+            </p>
         </div>
       </div>
       <ExpandableMenu />

@@ -16,15 +16,15 @@
   
     @media (min-width: $screen-xs) {
       padding: $header-padding-sm;
-      min-height: 16rem; // Slightly larger for small screens
+      min-height: 18rem; // Slightly larger for small screens
     }
     @media (min-width: $screen-sm) {
       padding: $header-padding-md;
-      min-height: 12rem; // Adjusted for tablets
+      min-height: 14rem; // Adjusted for tablets
     }
     @media (min-width: $screen-md) {
       padding: $header-padding-lg;
-      min-height: 9rem; // Adjusted for desktops
+      min-height: 10rem; // Adjusted for desktops
     }
     @media (min-width: $screen-lg) {
       padding: $header-padding-xl;
@@ -55,10 +55,14 @@
       height: $photo-size-md;
       border-radius: 2rem;
       margin-right: $spacing-md;
-          border: $thin solid $color-accent;
+          border: 2px solid goldenrod;
           box-shadow: $box-shadow-footer;
+          cursor: pointer;
       // border: $thick solid $color-accent;
   
+      &:hover {
+        transform: scale(1.025);
+      }
       @media (max-width: $screen-sm) {
         width: $photo-size-sm;
         height: $photo-size-sm;
@@ -70,29 +74,36 @@
       h1 {
         font-size: $font-size-h1;
         margin: 0;
+        padding: 0.5rem 0.2rem 0 0;
   
         color: $color-white;
-        text-shadow: 0 0 5px $color-text;
+        text-shadow: 0 0 6px black;
         @media (max-width: $screen-sm) {
           font-size: $font-size-h2; // Adjusted for smaller screens
         }
       }
   
       p {
-        margin: $spacing-xs 0;
+        margin: 0 0 $spacing-xs 0;
         color: $color-white;
-        text-shadow: 0 0 5px $color-text;
+        text-shadow: 0 0 6px black;
         font-size: 1.2rem;
         font-weight: bold;
+        padding: 0 0.4rem;
+        border-radius: 0.75rem;
   
         @media (max-width: $screen-sm) {
           font-size: 0.9rem; // Slightly smaller for small screens
+        }
+
+        svg {
+          filter: drop-shadow(0 0 6px black);
         }
       }
   
       a {
         color: $color-white;
-        text-shadow: 0 0 5px $color-text;
+        text-shadow: 0 0 6px black;
         font-size: 1.2rem;
         text-decoration: none;
         font-weight: bold;
