@@ -53,13 +53,16 @@
     .profile-photo {
       width: $photo-size-md;
       height: $photo-size-md;
-      border-radius: $border-radius-circle;
+      border-radius: 2rem;
       margin-right: $spacing-md;
+          border: $thin solid $color-accent;
+          box-shadow: $box-shadow-footer;
       // border: $thick solid $color-accent;
   
       @media (max-width: $screen-sm) {
         width: $photo-size-sm;
         height: $photo-size-sm;
+      border-radius: 1rem;
       }
     }
   

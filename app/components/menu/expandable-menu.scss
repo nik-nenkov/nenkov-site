@@ -11,9 +11,13 @@
   .menu-button {
     width: $social-link-size-sm;
     height: $social-link-size-sm;
-    background-color: $color-dark;
     border-radius: $border-radius-circle;
+    background: linear-gradient(to bottom, rgba(213, 214, 216, 0.8), rgba(166, 200, 252, 0.8));
+    border-radius: 1rem;
     border: $thin solid $color-accent;
+    color: rgb(67, 64, 64);
+    text-decoration: none;
+    text-shadow: 0px 0px 2px rgba(255, 223, 14, 0.6);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,11 +29,14 @@
     .arrow {
       width: 12px;
       height: 12px;
-      border: $thin solid $color-accent;
+      border: $thin solid  rgb(67, 64, 64);
       border-width: 2px 2px 0 0;
       transform: rotate(45deg);
       position: absolute;
       transition: transform 0.3s ease;
+          color: rgb(67, 64, 64);
+          text-decoration: none;
+          box-shadow: 0px 0px 2px rgba(255, 223, 14, 0.6);
       
     @media (max-width: $screen-sm) {
         width: 10px;
@@ -99,19 +106,20 @@
           align-items: center;
           justify-content: center;
           height: $social-link-size-sm;
-          background: $color-pale;
-          border-radius: 1.5rem;
+          background: linear-gradient(to bottom, rgba(213, 214, 216, 0.8), rgba(166, 200, 252, 0.8));
+          border-radius: 1rem;
           border: $thin solid $color-accent;
-          color: $color-white;
+          color: rgb(67, 64, 64);
           text-decoration: none;
-          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+          text-shadow: 0px 0px 2px rgba(255, 223, 14, 0.6);
           font-size: $font-size-h3;
           box-shadow: $box-shadow-footer;
           transition: $bg-transition;
           padding: 0 1rem;
 
           &:hover {
-            background: $color-hover;
+                      background: linear-gradient(to bottom, rgba(213, 214, 216, 0.8), rgba(166, 200, 252, 0.8));
+
             transform: scale(1.1);
             box-shadow: $box-shadow-hover;
           }
