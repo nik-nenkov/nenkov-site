@@ -6,7 +6,7 @@ import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 export default function AppFooter() {
     return (
         
-      <footer className="footer">
+      <footer>
       <ul className="social-links">
         {/* <li>
           <a href="https://x.com/nik_nenkov" target="_blank" rel="noopener noreferrer">

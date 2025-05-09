@@ -6,93 +6,90 @@ footer {
     text-align: center;
     font-size: $font-size-small;
     color: $color-light;
-  
-    &.footer {
-      height: 32rem;
-      background: url('/1lu31x1angtb1.jpg') repeat;
-      background-size: 100% auto;
-      color: $color-white;
-      padding: $padding-lg 0;
-      text-align: center;
-      border-top: $thin solid goldenrod;
-      box-shadow: $box-shadow-footer;
-  
-      .social-links {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        gap: $social-gap-lg;
-  
-        li {
-          display: inline;
-  
-          a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: $social-link-size-lg;
-            height: $social-link-size-lg;
-            background: $color-pale;
-            border-radius: $border-radius-circle;
-            border: $thick solid whitesmoke;
-            color: $color-white;
-            text-decoration: none;
+    height: 32rem;
+    background: url('/1lu31x1angtb1.jpg') repeat;
+    background-size: 100% auto;
+    color: $color-white;
+    padding: $padding-lg 0;
+    text-align: center;
+    border-top: $thin solid goldenrod;
+    box-shadow: $box-shadow-footer;
+
+    .social-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: $social-gap-lg;
+
+      li {
+        display: inline;
+
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: $social-link-size-lg;
+          height: $social-link-size-lg;
+          background: $color-pale;
+          border-radius: $border-radius-circle;
+          border: $thick solid whitesmoke;
+          color: $color-white;
+          text-decoration: none;
+          font-size: $font-size-h3;
+          transition: $bg-transition;
+
+          &:hover {
+            background: $color-hover;
+            transform: scale(1.2);
+            box-shadow: $box-shadow-hover;
+          }
+
+          svg {
             font-size: $font-size-h3;
-            transition: $bg-transition;
-  
-            &:hover {
-              background: $color-hover;
-              transform: scale(1.2);
-              box-shadow: $box-shadow-hover;
-            }
-  
-            svg {
-              font-size: $font-size-h3;
-            }
           }
         }
       }
-  
-      p {
-        margin-top: $margin-sm;
-        font-size: $font-size-small;
-        color: $color-text-light;
-  
-        @media (max-width: $screen-sm) {
-          font-size: 0.8rem; // Adjusted for small screens
-        }
-      }
-  
+    }
+
+    p {
+      margin-top: $margin-sm;
+      font-size: $font-size-small;
+      color: $color-text-light;
+
       @media (max-width: $screen-sm) {
-        .social-links {
-          gap: $social-gap-md;
-  
-          li a {
-            width: $social-link-size-md;
-            height: $social-link-size-md;
+        font-size: 0.8rem; // Adjusted for small screens
+      }
+    }
+
+    @media (max-width: $screen-sm) {
+      .social-links {
+        gap: $social-gap-md;
+
+        li a {
+          width: $social-link-size-md;
+          height: $social-link-size-md;
+          font-size: $font-size-base;
+
+          svg {
             font-size: $font-size-base;
-  
-            svg {
-              font-size: $font-size-base;
-            }
           }
         }
       }
-  
-      @media (max-width: $screen-xs) {
-        .social-links {
-          gap: $social-gap-sm;
-  
-          li a {
-            width: $social-link-size-sm;
-            height: $social-link-size-sm;
+    }
+
+    @media (max-width: $screen-xs) {
+      .social-links {
+        gap: $social-gap-sm;
+
+        li a {
+          width: $social-link-size-sm;
+          height: $social-link-size-sm;
+          font-size: $font-size-small;
+
+          svg {
             font-size: $font-size-small;
-  
-            svg {
-              font-size: $font-size-small;
-            }
           }
         }
       }

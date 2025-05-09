@@ -81,6 +81,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
+        <link rel="preload" fetchPriority="high" as="image" href="/1lu31x1angtb1.jpg" type="image/jpg" />
+        <link rel="prefetch" href="/1lu31x1angtb1.jpg" as="image" />
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
