@@ -91,11 +91,11 @@ section {
         margin: 0;
         padding: 0;
         font-size: small;
-        color: grey;
+        color: rgb(101, 101, 101);
         padding: 0 0 0.5rem 0.125rem;
 
         @media (prefers-color-scheme: dark) {
-          color: $color-mid;
+          color: rgb(164, 164, 164);
         }
         @media (min-width: $screen-sm) {
           font-size: medium; // Adjusted for small screens
