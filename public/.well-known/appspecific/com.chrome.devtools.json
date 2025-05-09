@@ -1,0 +1,10 @@
+{
+  "message": "This is a placeholder file for Chrome DevTools.",
+  "appName": "Nikolay Nenkov CV",
+  "description": "This file is not currently used but exists to handle requests from Chrome DevTools.",
+  "version": "1.0.0",
+  "developer": {
+    "name": "Nikolay Nenkov",
+    "email": "nik.nenkov@icloud.com"
+  }
+}

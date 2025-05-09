@@ -1,0 +1,6 @@
+# Allow all web crawlers to access everything
+User-agent: *
+Disallow:
+
+# Specify the location of the sitemap
+Sitemap: https://www.nenkov.site/sitemap.xml
