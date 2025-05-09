@@ -8,7 +8,7 @@ export default function AppHeader() {
     return (
       <header className="App-header">
       <div className="profile-container">
-        <img src="/Untitled.png" alt="Nikolay Nenkov" className="profile-photo" />
+        <img src="/nik-avatar-bg.png" alt="Nikolay Nenkov" className="profile-photo" />
         <div className="contact-info">
           <h1>Nikolay Nenkov</h1>
           <p>
