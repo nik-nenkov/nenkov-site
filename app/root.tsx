@@ -12,19 +12,41 @@ import "./root.scss";
 import AppFooter from "./components/footer/app-footer";
 
 export const links: Route.LinksFunction = () => [
+  {
+    rel: "preload",
+    fetchPriority: "high",
+    as: "image",
+    href: "/bg.webp",
+    type: "image/webp"
+  },
+  {
+    rel: "apple-touch-icon",
+    href: "icons/apple-icon-180.png"
+  },
+  {
+    rel: "preload",
+    fetchPriority: "high",
+    as: "image",
+    href: "/bg.webp",
+    type: "image/webp"
+  },
+  {
+    rel: "prefetch",
+    href: "/bg.webp",
+    as: "image"
+  },
+  { rel: "preload", href: "/nik.webp",
+    fetchPriority: "high", as: "image" },
+  {
+    rel: "prefetch",
+    href: "/nik.webp",
+    as: "image"
+  },
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
     rel: "preconnect",
     href: "https://fonts.gstatic.com",
     crossOrigin: "anonymous",
-  },
-  {
-    rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
-  },
-  {
-    rel: "stylesheet",
-    href: "https://fonts.googleapis.com/icon?family=Material+Icons",
   },
   { rel: "icon", type: "image/png", sizes: "48x48", href: "icons/icon-48x48.png" },
   { rel: "icon", type: "image/png", sizes: "72x72", href: "icons/icon-72x72.png" },
@@ -75,26 +97,24 @@ export const links: Route.LinksFunction = () => [
   { rel: "apple-touch-startup-image", href: "icons/apple-splash-1334-750.jpg", media: "(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" },
   { rel: "apple-touch-startup-image", href: "icons/apple-splash-640-1136.jpg", media: "(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" },
   { rel: "apple-touch-startup-image", href: "icons/apple-splash-1136-640.jpg", media: "(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" },
+  {
+    rel: "stylesheet",
+    href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
+  },
+  {
+    rel: "stylesheet",
+    href: "https://fonts.googleapis.com/icon?family=Material+Icons",
+  },
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
-        <link
-          rel="preload"
-          fetchPriority="high"
-          as="image"
-          href="/bg.webp"
-          type="image/webp"
-        />
-        <link rel="preload" fetchPriority="high" as="image" href="/bg.webp" type="image/webp" />
-        <link rel="prefetch" href="/bg.webp" as="image" />
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <meta name="description" content="Nikolay Nenkov's CV website, built with React and Vite." />
-        <link rel="apple-touch-icon" href="icons/apple-icon-180.png" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <title>Nik CV</title>
         <Meta />
