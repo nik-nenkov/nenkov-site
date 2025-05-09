@@ -85,21 +85,18 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <meta name="description" content="Nikolay Nenkov's CV website, built with React and Vite." />
-        
-        <link rel="apple-touch-icon" href="icons/apple-icon-180.png"/>
-
-        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <link rel="apple-touch-icon" href="icons/apple-icon-180.png" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
         <title>Nik CV</title>
         <Meta />
         <Links />
       </head>
       <body>
-        <noscript>You need to enable JavaScript to run this app.</noscript>
-        {children}
-        <AppFooter />
+        <main>{children}</main>
         <ScrollRestoration />
         <Scripts />
       </body>
+      <AppFooter />
     </html>
   );
 }

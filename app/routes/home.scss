@@ -11,22 +11,17 @@
   padding: 0;
 }
 
-// --- Additional Global Elements ---
-main {
-  padding: $padding-md;
-  max-width: $scr-width-md;
-  margin: 0 auto;
-
-  @media (max-width: $screen-sm) {
-    padding: $padding-sm; // Reduced padding for small screens
-  }
-}
-
 section {
+  padding: 0 2rem;
   margin-bottom: $margin-lg;
 
   @media (prefers-color-scheme: dark) {
     color: $color-text-light;
+  }
+
+  @media screen and (max-width: $screen-sm) {
+    padding: 0 1rem;
+    margin-bottom: $margin-md;
   }
 
   h2 {
@@ -39,6 +34,7 @@ section {
 
     @media (prefers-color-scheme: dark) {
       color: $color-heading-light;
+      border-bottom: $thick solid $color-accent-light;
     }
 
     @media (max-width: $screen-sm) {
@@ -46,36 +42,44 @@ section {
     }
   }
 
-  p,
-  ul {
+  p {
     font-size: $font-size-base;
     margin: $margin-sm 0;
     text-align: left;
+    padding: 0 0.5rem;
 
     @media (prefers-color-scheme: dark) {
       color: $color-text-light;
     }
 
     @media (max-width: $screen-sm) {
-      padding: 0 0.6rem;
-      font-size: 0.9rem; // Adjusted for small screens
+      padding: 0 0.2rem;
+      font-size: 0.8rem; // Adjusted for small screens
     }
   }
 
   ul {
+    text-align: left;
     list-style-type: disc;
-    padding-left: $padding-md;
+    padding: 0 0 0 1.5rem;
 
     li {
       margin-bottom: $margin-xs;
 
+      &::marker {
+        color: $color-accent;
+        font-size: $font-size-base;
+        @media (prefers-color-scheme: dark) {
+          color: rgba($color: #6f82b2, $alpha: 1.0);
+        }
+      }
       h3 {
         font-size: $font-size-h3;
-        margin: $margin-md 0 0 0;
+        margin: $margin-sm 0 0 0;
         color: $color-text;
 
         @media (prefers-color-scheme: dark) {
-          color: $color-text-light;
+          color: rgba($color: #6f82b2, $alpha: 1.0);
         }
 
         @media (max-width: $screen-sm) {
@@ -83,8 +87,24 @@ section {
         }
       }
 
+      h4 {
+        margin: 0;
+        padding: 0;
+        font-size: small;
+        color: grey;
+        padding: 0 0 0.5rem 0.125rem;
+
+        @media (prefers-color-scheme: dark) {
+          color: $color-mid;
+        }
+        @media (min-width: $screen-sm) {
+          font-size: medium; // Adjusted for small screens
+        }
+      }
+
       p {
         margin: 0 0 $margin-xs 0;
+        padding: 0 0 1rem 0.2rem;
         font-size: $font-size-small;
         color: $color-mid;
 
@@ -98,5 +118,44 @@ section {
       }
     }
   }
-}
 
+  dl {
+    margin: $margin-md 0;
+    padding: 0;
+    border-left: $thick solid goldenrod;
+    padding-left: $padding-md;
+    text-align: left;
+
+        @media (prefers-color-scheme: dark) {
+          border-left: $thick solid rgba($color: #6f82b2, $alpha: 1.0);
+        }
+    dt {
+      font-weight: bold;
+      font-size: $font-size-h3;
+      color: $color-heading-dark;
+      margin-top: $margin-sm;
+
+      @media (prefers-color-scheme: dark) {
+            color: rgba($color: #6f82b2, $alpha: 1.0);
+      }
+
+      @media (max-width: $screen-sm) {
+        font-size: 0.9rem; // Adjusted for small screens
+      }
+    }
+
+    dd {
+      margin: $margin-xs 0 $margin-sm $padding-sm;
+      font-size: $font-size-base;
+      color: $color-text;
+
+      @media (prefers-color-scheme: dark) {
+        color: $color-text-light;
+      }
+
+      @media (max-width: $screen-sm) {
+        font-size: 0.75rem; // Adjusted for small screens
+      }
+    }
+  }
+}

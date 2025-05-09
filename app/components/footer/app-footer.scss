@@ -4,17 +4,17 @@
 // --- Footer ---
 footer {
     text-align: center;
-    margin-top: $margin-md;
     font-size: $font-size-small;
     color: $color-light;
   
     &.footer {
+      height: 32rem;
       background: url('/1lu31x1angtb1.jpg') repeat;
       background-size: 100% auto;
       color: $color-white;
       padding: $padding-lg 0;
       text-align: center;
-      border-top: $thick solid $color-dark;
+      border-top: $thin solid goldenrod;
       box-shadow: $box-shadow-footer;
   
       .social-links {
@@ -36,7 +36,7 @@ footer {
             height: $social-link-size-lg;
             background: $color-pale;
             border-radius: $border-radius-circle;
-            border: $thin solid $color-accent;
+            border: $thick solid whitesmoke;
             color: $color-white;
             text-decoration: none;
             font-size: $font-size-h3;
