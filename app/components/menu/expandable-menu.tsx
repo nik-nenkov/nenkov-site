@@ -12,6 +12,7 @@ export default function ExpandableMenu() {
                     <li><a href="/projects">Projects</a></li>
                     <li><a href="/courses">Courses</a></li>
                     <li><a href="/diagrams">Diagrams</a></li>
+                    <li><a href="/books">Books</a></li>
                 </ul>
             </nav>
         </div>
