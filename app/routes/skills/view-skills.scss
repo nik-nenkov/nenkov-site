@@ -10,7 +10,7 @@
   }
 
   dl {
-    margin: 0;
+    margin: 1rem;
     padding: 0;
     border-left: 4px solid #007acc;
     padding-left: 1rem;
@@ -23,9 +23,30 @@
     }
 
     dd {
-      margin: 0.5rem 0 1rem 1rem;
+      margin: 0.5rem 0 2rem 1rem;
       font-size: 1rem;
       color: #555;
+    }
+  }
+
+  // --- Dark mode styles ---
+  @media (prefers-color-scheme: dark) {
+    background: #181c24;
+
+    h1 {
+      color: #e0e6f8;
+    }
+
+    dl {
+      border-left: 4px solid #4fc3f7;
+
+      dt {
+        color: #4fc3f7;
+      }
+
+      dd {
+        color: #e0e6f8;
+      }
     }
   }
 }

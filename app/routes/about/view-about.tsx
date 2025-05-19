@@ -1,8 +1,11 @@
 import React from "react";
 import "./view-about.scss";
+import TopBar from "~/components/bar/top-bar";
 
 export default function ViewAbout() {
   return (
+        <>
+          <TopBar />
     <section className="about-section">
       <h1>About Me</h1>
       <p>
@@ -44,5 +47,6 @@ export default function ViewAbout() {
         I am always open to exciting opportunities and collaborations. If you have a project or idea that aligns with my skills and interests, feel free to reach out!
       </p>
     </section>
+    </>
   );
 }

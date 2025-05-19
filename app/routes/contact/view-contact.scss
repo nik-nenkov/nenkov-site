@@ -1,6 +1,7 @@
 .contact-section {
   padding: 2rem;
   font-family: Arial, sans-serif;
+  min-height: 82vh;
 
   h1 {
     font-size: 2rem;
@@ -25,10 +26,32 @@
   }
 
   .map-container {
+    max-width: 800px;
+    margin: 2rem auto;
     iframe {
       border: 0;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 800px;
+    }
+  }
+
+  // --- Dark mode styles ---
+  @media (prefers-color-scheme: dark) {
+    background: #181c24;
+
+    h1 {
+      color: #e0e6f8;
+    }
+
+    .contact-details {
+      p {
+        color: #b3c7f9;
+      }
+      strong {
+        color: #4fc3f7;
+      }
     }
   }
 }

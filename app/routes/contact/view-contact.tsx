@@ -1,8 +1,11 @@
 import React from "react";
 import "./view-contact.scss";
+import TopBar from "~/components/bar/top-bar";
 
 export default function ViewContact() {
   return (
+      <>
+        <TopBar />
     <section className="contact-section">
       <h1>Contact Me</h1>
       <div className="contact-details">
@@ -22,5 +25,6 @@ export default function ViewContact() {
         ></iframe>
       </div>
     </section>
+    </>
   );
 }

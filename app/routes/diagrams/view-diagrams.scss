@@ -48,4 +48,33 @@
       }
     }
   }
+
+  // --- Dark mode styles ---
+  @media (prefers-color-scheme: dark) {
+    background: #181c24;
+
+    h1 {
+      color: #e0e6f8;
+    }
+
+    p {
+      color: #b3c7f9;
+    }
+
+    .diagrams-gallery {
+      .diagram {
+        border: 1px solid #3a4a6a;
+        background: #232b39;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+
+        h2 {
+          color: #4fc3f7;
+        }
+
+        p {
+          color: #e0e6f8;
+        }
+      }
+    }
+  }
 }

@@ -35,4 +35,23 @@
       margin-bottom: 0.5rem;
     }
   }
+
+  // --- Dark mode styles ---
+  @media (prefers-color-scheme: dark) {
+    background: #181c24;
+
+    h1, h2 {
+      color: #4addb8ca;
+    }
+
+    p {
+      color: #b3c7f9;
+    }
+
+    ul {
+      li {
+        color: #b3c7f9;
+      }
+    }
+  }
 }
