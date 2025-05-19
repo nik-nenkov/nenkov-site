@@ -166,4 +166,22 @@ section {
       }
     }
   }
+
+  @media (min-width: 1200px) {
+    h2 {
+      font-size: 2.5rem; // Larger headings
+    }
+    h3 {
+      font-size: 1.6rem;
+    }
+    h4 {
+      font-size: 1.1rem;
+    }
+    p, ul li p, dl dd {
+      font-size: 1.15rem;
+    }
+    dl dt {
+      font-size: 1.3rem;
+    }
+  }
 }
