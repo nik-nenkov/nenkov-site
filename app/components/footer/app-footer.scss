@@ -243,13 +243,46 @@ footer {
     }
   }
 
+  .footer-nav-columns {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    @media (max-width: 600px) {
+      flex-direction: row;
+      gap: 0;
+
+      // Style the links to appear inline with | between them
+      li {
+        display: inline;
+      }
+    }
+
+    ul li a {
+      display: inline-block;
+      width: 5.6rem;
+      height: 1.4rem;
+      transition: color 0.3s, font-size 0.3s !important;
+      &:hover {
+        color: #fff !important;
+        font-size: 1.3rem !important;
+      }
+    }
+  }
+
   .footer-copyright {
-    font-size: 0.875rem;
-    color: #cccccc;
-    text-shadow: 2px 2px 4px #000000; // Deep black shadow for visibility
+    font-size: 1.2rem; // Bigger font size
+    color: #111111 !important; // Black text
+    text-shadow: 0 0 8px #fff, 2px 2px 8px #00ffe7; // Bright white and aqua shadow for glow
     margin-top: 2rem;
     text-align: center;
     width: 100%; // Ensure it spans the full width
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    p{
+      color: #004c74;
+    }
   }
 
   @media (max-width: 768px) {

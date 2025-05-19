@@ -86,19 +86,41 @@ export default function Home() {
           <h2>Skills</h2>
           <dl>
             <dt>Full-stack development</dt>
-            <dd>Java, SpringBoot, JSP, Quarkus, Angular, VueJS, React, TypeScript, Golang, Python</dd>
+            <dd>
+              Java, SpringBoot, JSP, Quarkus, Angular, VueJS, React, TypeScript, Golang, Python, Node.js, PHP, JavaFX, C++, JavaScript, HTML, SASS, CSS, Bash
+            </dd>
             <dt>Software testing</dt>
-            <dd>E2E, UI, API, unit, integration, mocking</dd>
+            <dd>
+              E2E, UI, API, unit, integration, mocking, automated build and testing workflows, code reviews
+            </dd>
             <dt>Cloud and DevOps</dt>
-            <dd>Docker, Kubernetes, Azure, CI/CD pipelines</dd>
+            <dd>
+              Docker, Kubernetes, Azure, CI/CD pipelines, VPS, AWS, XAMPP, cPanel, SSH, DNS, Content Distribution Networks
+            </dd>
             <dt>System design and debugging</dt>
-            <dd>Sequence and C4 model UML diagrams, log analysis, system tracing</dd>
+            <dd>
+              Sequence and C4 model UML diagrams, log analysis, system tracing, software architecture, software design, requirements analysis, stakeholder alignment
+            </dd>
             <dt>API development and integration</dt>
-            <dd>REST, OAuth, MQTT, ETL, SQL, WS, libraries, services</dd>
+            <dd>
+              REST, OAuth, MQTT, ETL, SQL, WS, libraries, services, OpenAPI Specification (OAS), 3rd Party Integrations, Stripe, Azure Cognitive Services, PDF Creator
+            </dd>
             <dt>Agile workflows</dt>
-            <dd>Jira, Figma, async collaboration with global teams</dd>
+            <dd>
+              Jira, Figma, async collaboration with global teams, Confluence, project setup, repository management, design documentation
+            </dd>
             <dt>Technical consulting and team support</dt>
-            <dd>Mentoring, project optimization</dd>
+            <dd>
+              Mentoring, project optimization, tutoring, onboarding, documentation, requirements gathering, team leadership
+            </dd>
+            <dt>Data and Visualization</dt>
+            <dd>
+              Data Mining, Data Visualization, PostgreSQL, ElasticSearch, ORM, Liquibase, reporting, OpenStreetMap, Thymeleaf
+            </dd>
+            <dt>Other</dt>
+            <dd>
+              CAD (SolidWorks, AutoCAD), Construction Estimating, Problem Solving, Client Delivery, Research and Development (R&D), Printing, Sequence Diagrams, JWT, Single Page Applications
+            </dd>
           </dl>
         </section>
         <section>
