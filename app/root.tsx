@@ -35,11 +35,15 @@ export const links: Route.LinksFunction = () => [
     href: "/bg.webp",
     as: "image"
   },
-  { rel: "preload", href: "/nik.webp",
-    fetchPriority: "high", as: "image" },
+  { rel: "preload", 
+    href: "/107142654.jpg",
+    fetchPriority: "high", 
+    as: "image" 
+  },
   {
     rel: "prefetch",
-    href: "/nik.webp",
+    href: "/107142654.jpg",
+    fetchPriority: "high",
     as: "image"
   },
   { rel: "preconnect", href: "https://fonts.googleapis.com" },

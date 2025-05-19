@@ -9,7 +9,7 @@ export default function AppHeader() {
       <header className="App-header">
       <div className="profile-container">
         <img 
-          src="/nik.webp" 
+          src="/107142654.jpg" 
           alt="Nikolay Nenkov" 
           className="profile-photo" 
           title="Follow on LinkedIn"

@@ -6,3 +6,24 @@
 /build/
 
 package-lock.json
+.venv/
+# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+*.whl
+*.env
+*.env.local
+*.env.development
+*.env.test
+*.env.production
+*.coverage
+*.cover
+*.tox
+*.coverage.*
+*.hypothesis/
+*.pytest_cache/
