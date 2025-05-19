@@ -1,136 +1,136 @@
 @use "/app/styles/constants" as *;
 @use "sass:color";
 
+// --- Footer shadows ---
+$footer-shadow-black: 0 0 12px #000, 0 0 10px #000, 0 0 8px #000 !important;
+$footer-shadow-white: 0 0 24px #fff, 0 0 10px #fff !important;
+
 // --- Footer ---
 footer {
-    text-align: center;
-    font-size: $font-size-small;
-    color: $color-light;
-    height: 32rem;
-    background: url('/bg.webp') no-repeat center center;
-    background-size: cover;
-    color: $color-white;
-    padding: $padding-lg 0;
-    text-align: center;
-    border-top: $thin solid goldenrod;
-    box-shadow: $box-shadow-footer;
+  text-align: center;
+  font-size: $font-size-small;
+  color: $color-light;
+  height: 32rem;
+  background: url('/no.jpg') no-repeat center center;
+  background-size: cover;
+  color: $color-white;
+  padding: $padding-lg 0;
+  border-top: $thin solid goldenrod;
+  box-shadow: $box-shadow-footer;
 
-    .social-links {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      gap: $social-gap-lg;
+  .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: $social-gap-lg;
 
-      li {
-        display: inline;
+    li {
+      display: inline;
 
-        a {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: $social-link-size-lg;
-          height: $social-link-size-lg;
-          background: $color-pale;
-          border-radius: $border-radius-circle;
-          border: $thick solid whitesmoke;
-          color: $color-white;
-          text-decoration: none;
-          font-size: $font-size-h3;
-          transition: $bg-transition;
-          
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: $social-link-size-lg;
+        height: $social-link-size-lg;
+        background: $color-pale;
+        border-radius: $border-radius-circle;
+        border: $thick solid whitesmoke;
+        color: $color-white;
+        text-decoration: none;
+        font-size: $font-size-h3;
+        transition: $bg-transition;
+        text-shadow: $footer-shadow-white;
+
+        &:hover {
+          background: $color-hover;
+          transform: scale(1.2);
+          box-shadow: $box-shadow-hover;
+        }
+
+        @media (prefers-color-scheme: dark) {
+          border: $thick solid turquoise;
+          color: turquoise;
+          background-color: $color-pale-dark;
 
           &:hover {
-            background: $color-hover;
+            background: $color-pale-dark;
             transform: scale(1.2);
             box-shadow: $box-shadow-hover;
           }
-
-          @media (prefers-color-scheme: dark) {
-            border: $thick solid aquamarine;
-            color: aquamarine;
-            background-color: $color-pale-dark;
-
-            &:hover {
-              background: $color-pale-dark;
-              transform: scale(1.2);
-              box-shadow: $box-shadow-hover;
-            }
-          }
-
-          svg {
-            font-size: $font-size-h3;
-          }
         }
-      }
-    }
 
-    p {
-      margin-top: $margin-sm;
-      font-size: $font-size-small;
-      color: $color-text-light;
-
-      @media (max-width: $screen-sm) {
-        font-size: 0.8rem; // Adjusted for small screens
-      }
-    }
-
-    @media (max-width: $screen-sm) {
-      .social-links {
-        gap: $social-gap-md;
-
-        li a {
-          width: $social-link-size-md;
-          height: $social-link-size-md;
-          font-size: $font-size-base;
-
-          svg {
-            font-size: $font-size-base;
-          }
-        }
-      }
-    }
-
-    @media (max-width: $screen-xs) {
-      .social-links {
-        gap: $social-gap-sm;
-
-        li a {
-          width: $social-link-size-sm;
-          height: $social-link-size-sm;
-          font-size: $font-size-small;
-
-          svg {
-            font-size: $font-size-small;
-          }
+        svg {
+          font-size: $font-size-h3;
         }
       }
     }
   }
 
+  p {
+    margin-top: $margin-sm;
+    font-size: $font-size-small;
+    color: $color-text-light;
+    text-shadow: $footer-shadow-white;
+
+    @media (max-width: $screen-sm) {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media (max-width: $screen-sm) {
+    .social-links {
+      gap: $social-gap-md;
+
+      li a {
+        width: $social-link-size-md;
+        height: $social-link-size-md;
+        font-size: $font-size-base;
+
+        svg {
+          font-size: $font-size-base;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $screen-xs) {
+    .social-links {
+      gap: $social-gap-sm;
+
+      li a {
+        width: $social-link-size-sm;
+        height: $social-link-size-sm;
+        font-size: $font-size-small;
+
+        svg {
+          font-size: $font-size-small;
+        }
+      }
+    }
+  }
+}
+
 .app-footer {
-  background-color: #1a1a1a; // Dark background for a professional look
-  color: #ffffff; // White text for contrast
-  padding: 3rem 1rem; // Add padding for spacing
+  background-color: #1a1a1a;
+  color: #111a2f;
+      text-shadow: $footer-shadow-white;
+  padding: 3rem 1rem;
   text-align: center;
 
   .footer-content {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    flex-direction: row; // Place sections side by side
-    justify-content: space-between; // Add spacing between sections
-    align-items: flex-start; // Align sections at the top
-    gap: 2rem; // Space between sections
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
 
-    .footer-section:first-child {
-      flex: 3; // First column takes 3 parts
-    }
-
-    .footer-section:nth-child(2) {
-      flex: 1; // Second column takes 1 part
-    }
+    .footer-section:first-child { flex: 3; }
+    .footer-section:nth-child(2) { flex: 1; }
   }
 
   .footer-section {
@@ -141,15 +141,15 @@ footer {
       text-align: left;
       padding-bottom: 0.5rem;
       margin-bottom: 1rem !important;
-      border-bottom: 2px solid aqua; // LinkedIn blue for the bottom border
-      color: #ffffff;
-      text-shadow: 0 0 8px #000000; // Deep black shadow for visibility
+      border-bottom: 2px solid turquoise;
+      color: #111a2f;
+      text-shadow: $footer-shadow-white;
     }
 
     p, a {
       font-size: 1rem;
-      color: #ffffff;
-      text-shadow: 0 0 6px #000000; // Deep black shadow for visibility
+      color: #111a2f;
+      text-shadow: $footer-shadow-white;
       margin: 0.5rem 0;
     }
 
@@ -163,8 +163,9 @@ footer {
           list-style: none;
 
           a {
-            color: #ffffff;
+            color: #fff !important;
             font-size: 1.5rem;
+            text-shadow: $footer-shadow-white;
             transition: color 0.3s ease;
           }
         }
@@ -174,7 +175,7 @@ footer {
     &.nav-links-section {
       .footer-nav {
         display: flex;
-        flex-direction: column; // Stack links vertically
+        flex-direction: column;
         align-items: center;
         gap: 0.5rem;
 
@@ -182,14 +183,12 @@ footer {
           list-style: none;
 
           a {
-            color: #ffffff;
+            color: #111a2f;
             text-decoration: none;
             font-size: 1rem;
+            color: white;
+            text-shadow: $footer-shadow-black;
             transition: color 0.3s ease;
-
-            &:hover {
-              color: #0077b5; // Highlight color for hover
-            }
           }
         }
       }
@@ -198,8 +197,8 @@ footer {
     &.thank-you-section {
       p {
         font-size: 1.2rem;
-        color: #ffffff;
-        text-shadow: 2px 2px 4px #000000; // Deep black shadow for visibility
+        color: #111a2f;
+      text-shadow: $footer-shadow-white;
         margin: 0;
       }
     }
@@ -213,17 +212,13 @@ footer {
       list-style: none;
 
       a {
-        color: #ffffff;
+        color: #fff !important;
         font-size: 1.5rem;
+        text-shadow: $footer-shadow-white;
         transition: color 0.3s ease;
-
-        &:hover {
-          color: #0077b5; // LinkedIn blue for hover effect
-        }
       }
     }
   }
-
 
   .footer-nav {
     display: flex;
@@ -233,14 +228,11 @@ footer {
       list-style: none;
 
       a {
-        color: #ffffff;
+        color: #111a2f;
         text-decoration: none;
         font-size: 1rem;
+        text-shadow: $footer-shadow-black;
         transition: color 0.3s ease;
-
-        &:hover {
-          color: #0077b5; // Highlight color for hover
-        }
       }
     }
   }
@@ -250,15 +242,17 @@ footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
+    color: white;
+    text-shadow: $footer-shadow-white;
     @media (max-width: 768px) {
       padding-top: 0;
       flex-direction: row;
       gap: 0;
 
-      // Style the links to appear inline with | between them
       li {
         display: inline;
+        color: white;
+        text-shadow: $footer-shadow-white;
       }
     }
 
@@ -266,48 +260,51 @@ footer {
       display: inline-block;
       width: 5.6rem;
       height: 1.4rem;
+      color: white;
+      text-shadow: $footer-shadow-white;
       transition: color 0.3s, font-size 0.3s !important;
       &:hover {
-        color: #fff !important;
+        color: #ffffff !important;
         font-size: 1.3rem !important;
       }
     }
   }
 
   .footer-copyright {
-    font-size: 1.2rem; // Bigger font size// Bright white and aqua shadow for glow
+    font-size: 1.6rem;
     margin-top: 2rem;
     text-align: center;
-    width: 100%; // Ensure it spans the full width
+    width: 100%;
     font-weight: bold;
     letter-spacing: 0.05em;
-    p{
-      color: #004c74;
-      text-shadow: 0 0 8px #fff, 2px 2px 8px #00ffe7; 
+    p {
+      color: #111a2f;
+      text-shadow: $footer-shadow-white;
     }
   }
 
   @media (max-width: 768px) {
     .footer-content {
-      flex-direction: column; // Stack sections vertically on smaller screens
+      flex-direction: column;
       align-items: center;
     }
 
     .footer-section {
-      margin-bottom: 2rem; // Add spacing between sections
+      margin-bottom: 2rem;
     }
   }
 }
 
-.footer-left-part{
+.footer-left-part {
   display: flex;
   flex-direction: column;
-  flex:2;
+  flex: 2;
 }
 
-
-  ul.footer-nav{
-    text-align: left;;
-    margin:0 0 0 1rem;
-    padding:0;
-  }
+ul.footer-nav {
+  text-align: left;
+  margin: 0 0 0 1rem;
+  color: white;
+  text-shadow: $footer-shadow-white;
+  padding: 0;
+}

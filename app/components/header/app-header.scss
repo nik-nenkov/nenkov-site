@@ -2,7 +2,7 @@
 @use "sass:color";
 // --- Header Styles ---
 .App-header {
-    background-image: url('/bg.webp');
+    background-image: url('/no.jpg');
     background-size: cover;
     background-position: center;
     color: $color-white;
@@ -44,6 +44,7 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+      border-radius: 50%;
   
     @media (max-width: $screen-sm) {
       flex-flow: column;
@@ -53,17 +54,13 @@
     .profile-photo {
       width: $photo-size-md;
       height: $photo-size-md;
-      border-radius: 2rem;
+      border-radius: 50% !important;
       margin-right: $spacing-md;
-          border: 2px solid goldenrod;
+          border: 2px solid gold;
           box-shadow: $box-shadow-footer;
           cursor: pointer;
       // border: $thick solid $color-accent;
-  
-          @media (prefers-color-scheme: dark) {
-            box-shadow: inset 0 0 1rem black, inset 0 0 2rem rgba(0, 0, 0, 0.5);
-            filter: brightness(0.8);
-          }
+
       &:hover {
         transform: scale(1.025);
       }

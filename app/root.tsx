@@ -16,8 +16,8 @@ export const links: Route.LinksFunction = () => [
     rel: "preload",
     fetchPriority: "high",
     as: "image",
-    href: "/bg.webp",
-    type: "image/webp"
+    href: "/no.jpg",
+    type: "image/jpg"
   },
   {
     rel: "apple-touch-icon",
@@ -27,12 +27,12 @@ export const links: Route.LinksFunction = () => [
     rel: "preload",
     fetchPriority: "high",
     as: "image",
-    href: "/bg.webp",
-    type: "image/webp"
+    href: "/no.jpg",
+    type: "image/jpg"
   },
   {
     rel: "prefetch",
-    href: "/bg.webp",
+    href: "/no.jpg",
     as: "image"
   },
   { rel: "preload", 
