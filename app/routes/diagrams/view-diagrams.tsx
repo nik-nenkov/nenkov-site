@@ -5,9 +5,8 @@ import TopBar from "~/components/bar/top-bar";
 export default function ViewDiagrams() {
   return (
     <>
-      <TopBar />
+      <TopBar title="Software Architecture Diagrams" />
       <section className="diagrams-section">
-        <h1>Software Architecture Diagrams</h1>
         <p>
           Explore a collection of diagrams that showcase my expertise in software architecture, system design, and professional software development. These diagrams include C4-style architecture diagrams, UML sequence diagrams, and other visualizations that demonstrate my ability to design and document complex systems and services.
         </p>

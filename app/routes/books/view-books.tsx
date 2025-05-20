@@ -25,9 +25,8 @@ const bookTitles = [
 export default function ViewBooks() {
   return (
     <>
-      <TopBar />
+      <TopBar title="Software Craftsmanship: In the Life of a Project" />
       <section className="books-section">
-        <h1>Software Craftsmanship: <span>In the Life of a Project</span></h1>
         <p>
           <strong>Software Craftsmanship</strong> is a practical book series for software professionals, sharing real-world insights and best practices across the entire software development lifecycle. Each volume dives into a key aspect of building, maintaining, and evolving successful software projects.
         </p>

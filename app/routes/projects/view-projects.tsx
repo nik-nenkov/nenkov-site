@@ -234,9 +234,8 @@ export default function ViewProjects() {
 
   return (
     <>
-      <TopBar />
+      <TopBar title="Projects History" />
       <div className="view-projects">
-        <h1>Projects History</h1>
         {projects.map((project, index) => (
           <div key={index} className="project-card">
             <h2>{project.title}</h2>

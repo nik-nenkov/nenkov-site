@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./expandable-menu.scss";
 
 export default function ExpandableMenu() {
@@ -9,10 +10,10 @@ export default function ExpandableMenu() {
             </label>
             <nav className="menu">
                 <ul>
-                    <li><a href="/projects">Projects</a></li>
-                    <li><a href="/courses">Courses</a></li>
-                    <li><a href="/diagrams">Diagrams</a></li>
-                    <li><a href="/books">Books</a></li>
+                    <li><Link to="/projects">Projects</Link></li>
+                    <li><Link to="/courses">Courses</Link></li>
+                    <li><Link to="/diagrams">Diagrams</Link></li>
+                    <li><Link to="/books">Books</Link></li>
                 </ul>
             </nav>
         </div>

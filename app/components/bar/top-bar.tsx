@@ -1,15 +1,20 @@
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./top-bar.scss";
 
-export default function TopBar() {
-  const navigate = useNavigate();
+interface TopBarProps {
+  title?: string;
+}
 
+export default function TopBar({ title = "Welcome to My Portfolio" }: TopBarProps) {
   return (
     <div className="top-bar">
-      <button className="back-button" onClick={() => navigate("/")}>
+      <Link className="back-button" to="/">
         <span className="arrow"></span>
-      </button>
-      <h1 className="title">Nikolay Nenkov CV / Presentation Website</h1>
+      </Link>
+      <div className="titles">
+        <h3 className="title">Nikolay Nenkov CV / Presentation Website</h3>
+        <h1>{title}</h1>
+      </div>
     </div>
   );
 }

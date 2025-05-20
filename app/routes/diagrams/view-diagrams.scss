@@ -20,31 +20,56 @@
   .diagrams-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 3rem 2rem;
 
     .diagram {
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: stretch;
+      min-height: 420px;
       border: 1px solid #ddd;
       border-radius: 8px;
       padding: 1rem;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background: #fff;
 
       h2 {
         font-size: 1.5rem;
         color: #007acc;
         margin-bottom: 1rem;
+        min-height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
       }
 
+      /* White background behind each image */
       img {
-        max-width: 100%;
+        max-width: 90%;
         height: auto;
         border-radius: 4px;
-        margin-bottom: 1rem;
+        margin: 1rem;
+        flex: 1 0 auto;
+        object-fit: contain;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background: #fff;           // White background
+        padding: 0.5rem;            // Optional: some padding for separation
+        box-shadow: 0 2px 8px rgba(0,0,0,0.04); // Optional: subtle shadow
       }
 
       p {
         font-size: 1rem;
         color: #666;
+        margin-top: auto;
+        text-align: center;
+        min-height: 3.2rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
       }
     }
   }
@@ -69,6 +94,10 @@
 
         h2 {
           color: #4fc3f7;
+        }
+
+        img {
+          background: #fff; // Keep white background behind image in dark mode
         }
 
         p {
