@@ -18,57 +18,6 @@ footer {
   border-top: $thin solid goldenrod;
   box-shadow: $box-shadow-footer;
 
-  .social-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: $social-gap-lg;
-
-    li {
-      display: inline;
-
-      a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: $social-link-size-lg;
-        height: $social-link-size-lg;
-        background: $color-pale;
-        border-radius: $border-radius-circle;
-        border: $thick solid whitesmoke;
-        color: $color-white;
-        text-decoration: none;
-        font-size: $font-size-h3;
-        transition: $bg-transition;
-        text-shadow: $footer-shadow-white;
-
-        &:hover {
-          background: $color-hover;
-          transform: scale(1.2);
-          box-shadow: $box-shadow-hover;
-        }
-
-        @media (prefers-color-scheme: dark) {
-          border: $thick solid turquoise;
-          color: turquoise;
-          background-color: $color-pale-dark;
-
-          &:hover {
-            background: $color-pale-dark;
-            transform: scale(1.2);
-            box-shadow: $box-shadow-hover;
-          }
-        }
-
-        svg {
-          font-size: $font-size-h3;
-        }
-      }
-    }
-  }
-
   p {
     margin-top: $margin-sm;
     font-size: $font-size-small;
@@ -116,7 +65,7 @@ footer {
 .app-footer {
   background-color: #1a1a1a;
   color: #111a2f;
-      text-shadow: $footer-shadow-white;
+  text-shadow: $footer-shadow-white;
   padding: 3rem 1rem;
   text-align: center;
 
@@ -153,25 +102,6 @@ footer {
       margin: 0.5rem 0;
     }
 
-    &.social-links-section {
-      .social-links {
-        display: flex;
-        justify-content: center;
-        gap: 1.5rem;
-
-        li {
-          list-style: none;
-
-          a {
-            color: #fff !important;
-            font-size: 1.5rem;
-            text-shadow: $footer-shadow-white;
-            transition: color 0.3s ease;
-          }
-        }
-      }
-    }
-
     &.nav-links-section {
       .footer-nav {
         display: flex;
@@ -198,24 +128,8 @@ footer {
       p {
         font-size: 1.2rem;
         color: #111a2f;
-      text-shadow: $footer-shadow-white;
-        margin: 0;
-      }
-    }
-  }
-
-  .social-links {
-    display: flex;
-    gap: 1rem;
-
-    li {
-      list-style: none;
-
-      a {
-        color: #fff !important;
-        font-size: 1.5rem;
         text-shadow: $footer-shadow-white;
-        transition: color 0.3s ease;
+        margin: 0;
       }
     }
   }
