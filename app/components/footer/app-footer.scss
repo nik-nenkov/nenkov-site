@@ -28,38 +28,6 @@ footer {
       font-size: 0.8rem;
     }
   }
-
-  @media (max-width: $screen-sm) {
-    .social-links {
-      gap: $social-gap-md;
-
-      li a {
-        width: $social-link-size-md;
-        height: $social-link-size-md;
-        font-size: $font-size-base;
-
-        svg {
-          font-size: $font-size-base;
-        }
-      }
-    }
-  }
-
-  @media (max-width: $screen-xs) {
-    .social-links {
-      gap: $social-gap-sm;
-
-      li a {
-        width: $social-link-size-sm;
-        height: $social-link-size-sm;
-        font-size: $font-size-small;
-
-        svg {
-          font-size: $font-size-small;
-        }
-      }
-    }
-  }
 }
 
 .app-footer {
