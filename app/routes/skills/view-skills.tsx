@@ -5,9 +5,8 @@ import TopBar from "~/components/bar/top-bar";
 export default function ViewSkills() {
   return (
     <>
-      <TopBar />
+      <TopBar title="Full Stack Skills" />
       <section className="skills-section">
-        <h1>Full-Stack Skills</h1>
         <dl>
           <dt>Frontend Development</dt>
           <dd>

@@ -1,5 +1,6 @@
 import "./app-footer.scss";
 import SocialLinks from "./social-links";
+import { Link } from "react-router-dom";
 
 export default function AppFooter() {
   return (
@@ -25,16 +26,16 @@ export default function AppFooter() {
         <section className="footer-section nav-links-section">
           <div className="footer-nav-columns">
             <ul className="footer-nav">
-              <li><a href="/">Home</a></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/skills">Skills</a></li>
-              <li><a href="/contact">Contact</a></li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/skills">Skills</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
             </ul>
             <ul className="footer-nav">
-              <li><a href="/courses">Courses</a></li>
-              <li><a href="/diagrams">Diagrams</a></li>
-              <li><a href="/projects">Projects</a></li>
-              <li><a href="/books">Books</a></li>
+              <li><Link to="/courses">Courses</Link></li>
+              <li><Link to="/diagrams">Diagrams</Link></li>
+              <li><Link to="/projects">Projects</Link></li>
+              <li><Link to="/books">Books</Link></li>
             </ul>
           </div>
         </section>

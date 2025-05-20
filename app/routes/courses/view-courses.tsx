@@ -26,7 +26,7 @@ export default function ViewCourses() {
 
   return (
       <>
-      <TopBar title="Courses I Teach"/>
+      <TopBar title="Courses to Teach"/>
     <section className="courses-section">
       <p>
         Here is a collection of courses I enjoy teaching, covering a wide range of topics in software development, design, and best practices.

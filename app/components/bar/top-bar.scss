@@ -106,11 +106,15 @@
     }
   h1 {
     font-size: 2.7rem;
-    margin: 3rem auto;font-weight: 700;
+    margin: 3rem auto;
+    font-weight: 700;
     letter-spacing: 0.03em;
     line-height: 1.1;
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.664), 0 0 8px aquamarine, 0 0 15px rgba(0, 0, 0, 0.697), 0 0 20px aquamarine;
     @media (max-width: $screen-sm) {
+      justify-content: top;
+      vertical-align: top;
+      margin: 0 0 4rem 0;
       font-size: 1.5rem;
     }
   }

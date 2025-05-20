@@ -5,9 +5,8 @@ import TopBar from "~/components/bar/top-bar";
 export default function ViewAbout() {
   return (
         <>
-          <TopBar />
+          <TopBar title="About Nik" />
     <section className="about-section">
-      <h1>About Me</h1>
       <p>
         Welcome to my professional website! My name is Nikolay Nenkov, and I am a passionate full-stack developer with extensive experience in building robust, scalable, and innovative solutions. This website serves as a showcase of my professional journey, achievements, and the services I provide.
       </p>
