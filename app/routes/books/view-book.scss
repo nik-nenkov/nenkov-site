@@ -1,0 +1,269 @@
+@use "/app/styles/constants" as *;
+
+.book-section {
+  padding: 2.5rem 1.5rem 2rem 1.5rem;
+  background: $color-background-light;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% - 3rem);
+  margin-bottom: 0;
+
+  @media (prefers-color-scheme: dark) {
+    background: $color-background-dark;
+    color: $color-text-light;
+  }
+
+  .book-layout {
+    width: 90%;
+    margin: 0 0;
+    background: $color-white;
+    border-radius: $border-radius-lg;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.07), 0 1.5px 4px rgba(0,0,0,0.06);
+    padding: 2rem 1.5rem;
+    display: flex;
+    gap: 2rem;
+
+    @media (max-width: $screen-md) {
+      flex-direction: column;
+      padding: 1.2rem 0.5rem;
+      gap: 1.2rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      background: $color-dark;
+    }
+  }
+
+  .chapter-menu {
+    min-width: 220px;
+    max-width: 270px;
+    background: $color-background-light;
+    border-radius: $border-radius-md;
+    border: 1.5px solid $color-accent-light;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 2rem 1rem 1.5rem 1rem;
+    margin-right: 1.5rem;
+
+    @media (max-width: $screen-md) {
+      margin-right: 0;
+      margin-bottom: 1.2rem;
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      padding: 1rem 0.5rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      background: $color-hover-dark;
+      border-color: $color-accent-dark;
+    }
+
+    .menu-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: $color-accent-dark;
+      margin-bottom: 1.2rem;
+      letter-spacing: 0.02em;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+
+    li {
+      margin-bottom: 0.6em;
+    }
+
+    button {
+      background: none;
+      border: none;
+      color: $color-mid;
+      font-size: 1.05rem;
+      font-weight: 500;
+      display: block;
+      padding: 0.4em 0.7em;
+      border-radius: 6px;
+      width: 100%;
+      text-align: left;
+      transition: background 0.18s, color 0.18s;
+      cursor: pointer;
+
+      &.active,
+      &:hover {
+        background: $color-accent-light;
+        color: $color-accent-dark;
+      }
+    }
+  }
+
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+
+    .header {
+      width: 100%;
+      max-width: 900px;
+      margin-bottom: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: $color-heading-dark;
+        margin: 0.5rem 0 0 0;
+        text-align: left;
+
+        @media (prefers-color-scheme: dark) {
+          color: $color-heading-light;
+        }
+      }
+    }
+
+    #chapter-title {
+      font-size: 1.18rem;
+      color: $color-mid;
+      margin-top: 0.5rem;
+      margin-bottom: 1.2rem;
+
+      @media (prefers-color-scheme: dark) {
+        color: $color-text-light;
+      }
+    }
+
+    #book-content {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+      background: none;
+      box-shadow: none;
+    }
+  }
+
+  .book-page {
+    background: #fffdfa;
+    border: 2px solid $color-accent-light;
+    border-radius: $border-radius-md;
+    box-shadow: 0 4px 32px #0002;
+    margin: 1.5rem auto 0 auto;
+    transition: box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    aspect-ratio: 1/1.4;
+    width: 80%;
+    max-width: 720px;
+    min-width: 256px;
+    height: auto;
+    max-height: 960px;
+    min-height: 336px;
+    padding: 2.2rem 2rem 1.5rem 2rem;
+    position: relative;
+    overflow: hidden;
+
+    @media (max-width: $screen-md) {
+      padding: 1.2rem 0.7rem;
+      min-height: 220px;
+      max-width: 98vw;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      background: $color-hover-dark;
+      border-color: $color-accent-dark;
+    }
+  }
+
+  .page-header,
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    color: $color-accent-light;
+    gap: 1.2rem;
+  }
+
+  .page-content {
+    flex: 1;
+    font-size: 1.13rem;
+    color: $color-text;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    font-family: 'Georgia', serif;
+
+    @media (prefers-color-scheme: dark) {
+      color: $color-text-light;
+    }
+  }
+
+  .page-number {
+    font-family: 'Georgia', serif;
+    font-size: 1.1rem;
+    color: $color-accent-light;
+    letter-spacing: 0.1em;
+  }
+
+  .nav-btn {
+    background: $color-accent-light;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5em 1.2em;
+    font-size: 1rem;
+    color: $color-heading-dark;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    margin: 0 0.5em;
+
+    &:hover:not(:disabled) {
+      background: $color-accent;
+      color: $color-heading-dark;
+    }
+    &:disabled {
+      background: #f7f3ec;
+      color: $color-accent-light;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.book-not-found {
+  margin: 4rem auto;
+  padding: 2rem 2.5rem;
+  background: $color-white;
+  border-radius: $border-radius-lg;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  text-align: center;
+  max-width: 500px;
+
+  h2 {
+    color: $color-accent-dark;
+    margin-bottom: 1rem;
+  }
+  p {
+    color: $color-mid;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  .back-link {
+    color: $color-accent-dark;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 1rem;
+    display: inline-block;
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}

@@ -11,25 +11,9 @@
     align-items: start;
     justify-content: space-between;
     padding: $header-padding-sm;
-    min-height: 18rem; 
+    height: 18.5rem !important; 
     position: relative; // Enable positioning for child elements
-  
-    @media (min-width: $screen-xs) {
-      padding: $header-padding-sm;
-      min-height: 18rem; // Slightly larger for small screens
-    }
-    @media (min-width: $screen-sm) {
-      padding: $header-padding-md;
-      min-height: 14rem; // Adjusted for tablets
-    }
-    @media (min-width: $screen-md) {
-      padding: $header-padding-lg;
-      min-height: 10rem; // Adjusted for desktops
-    }
-    @media (min-width: $screen-lg) {
-      padding: $header-padding-xl;
-      min-height: 6rem; // Adjusted for large desktops
-    }
+
 
     // Position the expandable menu
     .expandable-menu {

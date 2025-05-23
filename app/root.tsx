@@ -15,8 +15,8 @@ export const links: Route.LinksFunction = () => [
   // Preload and prefetch images
   { rel: "preload", fetchPriority: "high", as: "image", href: "/no.jpg", type: "image/jpg" },
   { rel: "prefetch", href: "/no.jpg", as: "image" },
-  { rel: "preload", fetchPriority: "high", as: "image", href: "/107142654.jpg", type: "image/jpg" },
-  { rel: "prefetch", href: "/107142654.jpg", as: "image" },
+  { rel: "preload", fetchPriority: "high", as: "image", href: "/Nik-123.png", type: "image/jpg" },
+  { rel: "prefetch", href: "/Nik-123.png", as: "image" },
 
   // Icons (favicon and app icons)
   { rel: "icon", type: "image/png", sizes: "32x32", href: "icons/icon-32x32.png" },
@@ -52,24 +52,25 @@ export const links: Route.LinksFunction = () => [
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
-        <meta name="description" content="Nikolay Nenkov's CV website, built with React and Vite." />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <title>Nik CV</title>
-        <Meta />
-        <Links />
-      </head>
+    <>
+      <html lang="en">
+        <head>
+          <meta charSet="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="theme-color" content="#000000" />
+          <meta name="description" content="Nikolay Nenkov's CV website, built with React and Vite." />
+          <title>Nik CV</title>
+          <Meta />
+          <Links />
+        </head>
       <body>
         <main>{children}</main>
         <ScrollRestoration />
         <Scripts />
       </body>
-      <AppFooter />
     </html>
+    <AppFooter />
+    </>
   );
 }
 
