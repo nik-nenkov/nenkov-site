@@ -12,8 +12,9 @@ async function main() {
       port: Number(process.env.FTP_PORT),
     });
     await client.ensureDir(process.env.FTP_UPLOAD_DIR);
-    await client.clearWorkingDir();
-    await client.uploadFromDir(process.env.FTP_LOCAL_DIR);
+    await client.uploadFromDir(process.env.FTP_LOCAL_DIR, process.env.FTP_UPLOAD_DIR, {
+      overwrite: true
+    });
   } catch (err) {
     console.error(err);
   }

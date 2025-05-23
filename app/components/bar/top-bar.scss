@@ -101,7 +101,7 @@
 
   .title {
     font-size: $font-size-h3;
-    color: $color-white;
+    color: black;
     margin: 0;
     font-weight: 400;
 
@@ -121,8 +121,9 @@
     margin: 3rem auto;
     font-weight: 700;
     letter-spacing: 0.03em;
+    color: #1a237e;
     line-height: 1.1;
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.664), 0 0 8px aquamarine, 0 0 15px rgba(0, 0, 0, 0.697), 0 0 20px aquamarine;
+    text-shadow: 0 0 3px white, 0 0 8px aquamarine, 0 0 15px white, 0 0 20px aquamarine;
     @media (max-width: $screen-sm) {
       justify-content: top;
       vertical-align: top;
