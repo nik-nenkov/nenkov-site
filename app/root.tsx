@@ -1,3 +1,4 @@
+import "./i18n"; // <-- Import your i18n initialization here
 import {
   isRouteErrorResponse,
   Links,

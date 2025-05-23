@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./app-header.scss";
 import ExpandableMenu from "../menu/expandable-menu";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 // Language options with flag emojis
 const languages = [
@@ -17,15 +18,23 @@ const languages = [
 export default function AppHeader() {
   const [lang, setLang] = useState("en");
   const [showLangList, setShowLangList] = useState(false);
+  const { t, i18n } = useTranslation();
 
   const selectedLang = languages.find((l) => l.code === lang);
+
+  // Change language in i18n when user selects a new language
+  const handleLangChange = (code: string) => {
+    setLang(code);
+    i18n.changeLanguage(code);
+    setShowLangList(false);
+  };
 
   return (
     <header className="App-header">
       <div className="profile-container">
         <img
           src="/Nik-123.png"
-          alt="Nikolay Nenkov"
+          alt={t("nikNenkov")}
           className="profile-photo"
           title="Follow on LinkedIn"
           onClick={() =>
@@ -36,15 +45,19 @@ export default function AppHeader() {
           }
         />
         <div className="contact-info">
-          <h1>Nikolay Nenkov</h1>
-          <p style={{ color: "gold" }}>Full Stack Software Developer</p>
+          <h1>{t("nikNenkov")}</h1>
+          <p style={{ color: "gold" }}>{t("fullStackDeveloper")}</p>
           <p>
             <FontAwesomeIcon icon={faEnvelope} />{" "}
-            <a href="mailto:nik.nenkov@icloud.com">nik.nenkov@icloud.com</a>
+            <a href="mailto:nik.nenkov@icloud.com">
+              {t("contactEmail")}: nik.nenkov@icloud.com
+            </a>
           </p>
           <p>
             <FontAwesomeIcon icon={faPhone} />{" "}
-            <a href="tel:+359890138750">+359 890 138 750</a>
+            <a href="tel:+359890138750">
+              {t("contactPhone")}: +359 890 138 750
+            </a>
           </p>
         </div>
       </div>
@@ -74,10 +87,7 @@ export default function AppHeader() {
                 <button
                   key={l.code}
                   className="lang-btn"
-                  onClick={() => {
-                    setLang(l.code);
-                    setShowLangList(false);
-                  }}
+                  onClick={() => handleLangChange(l.code)}
                   title={l.label}
                   type="button"
                 >
