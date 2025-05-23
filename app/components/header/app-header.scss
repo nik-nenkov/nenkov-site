@@ -2,7 +2,7 @@
 @use "sass:color";
 // --- Header Styles ---
 .App-header {
-    background-image: url('/no.jpg');
+    background-image: url('/bg.jpg');
     background-size: cover;
     background-position: center;
     color: $color-white;
@@ -27,12 +27,14 @@
   .profile-container {
     display: flex;
     align-items: center;
+    margin-top: 2rem;
     flex-wrap: wrap;
       border-radius: 50%;
   
-    @media (max-width: $screen-sm) {
+    @media (max-width: 800px) {
       flex-flow: column;
       align-self: start;
+      align-items: start;
     }
   
     .profile-photo {
@@ -48,7 +50,7 @@
       &:hover {
         transform: scale(1.025);
       }
-      @media (max-width: $screen-sm) {
+      @media (max-width: 800px) {
         width: $photo-size-sm;
         height: $photo-size-sm;
       border-radius: 1rem;
@@ -62,32 +64,32 @@
         padding: 0.5rem 0.2rem 0 0;
   
         color: $color-white;
-        text-shadow: 0 0 6px black;
-        @media (max-width: $screen-sm) {
+        text-shadow: 0 0 6px black,0 0 6px black,0 0 16px black,0 0 16px black;
+        @media (max-width: 800px) {
           font-size: $font-size-h2; // Adjusted for smaller screens
         }
         
           @media (prefers-color-scheme: dark) {
             color: $color-text-light;
-            text-shadow: 0 0 6px black;
+            text-shadow: 0 0 6px black,0 0 6px black,0 0 16px black,0 0 16px black;
           }
       }
   
       p {
         margin: 0 0 $spacing-xs 0;
         color: $color-white;
-        text-shadow: 0 0 6px black;
+        text-shadow: 0 0 6px black,0 0 6px black,0 0 16px black,0 0 16px black;
         font-size: 1.2rem;
         font-weight: bold;
         padding: 0 0.3rem;
         border-radius: 0.75rem;
   
-        @media (max-width: $screen-sm) {
+        @media (max-width: 800px) {
           font-size: 0.9rem; // Slightly smaller for small screens
         }
         @media (prefers-color-scheme: dark) {
           color: $color-text-light;
-          text-shadow: 0 0 6px black;
+          text-shadow: 0 0 6px black,0 0 6px black,0 0 16px black,0 0 16px black;
         }
         svg {
           filter: drop-shadow(0 0 6px black);
@@ -96,11 +98,11 @@
   
       a {
         color: $color-white;
-        text-shadow: 0 0 6px black;
+        text-shadow: 0 0 6px black,0 0 6px black,0 0 16px black,0 0 16px black;
         font-size: 1.2rem;
         text-decoration: none;
         font-weight: bold;
-        @media (max-width: $screen-sm) {
+        @media (max-width: 800px) {
           font-size: 0.9rem; // Slightly smaller for small screens
         }
         &:hover {
@@ -109,7 +111,7 @@
         
         @media (prefers-color-scheme: dark) {
           color: $color-text-light;
-          text-shadow: 0 0 6px black;
+          text-shadow: 0 0 6px black,0 0 6px black,0 0 16px black,0 0 16px black;
         }
       }
     }

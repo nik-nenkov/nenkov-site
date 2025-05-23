@@ -2,7 +2,7 @@ import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./app-header.scss";
 import ExpandableMenu from "../menu/expandable-menu";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 // Language options with flag emojis
@@ -16,15 +16,18 @@ const languages = [
 ];
 
 export default function AppHeader() {
-  const [lang, setLang] = useState("en");
-  const [showLangList, setShowLangList] = useState(false);
   const { t, i18n } = useTranslation();
+  const [lang, setLang] = useState(i18n.language || "bg");
+  const [showLangList, setShowLangList] = useState(false);
+
+  // Sync local lang state with i18n language
+  useEffect(() => {
+    setLang(i18n.language);
+  }, [i18n.language]);
 
   const selectedLang = languages.find((l) => l.code === lang);
 
-  // Change language in i18n when user selects a new language
   const handleLangChange = (code: string) => {
-    setLang(code);
     i18n.changeLanguage(code);
     setShowLangList(false);
   };

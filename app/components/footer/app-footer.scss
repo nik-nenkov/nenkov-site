@@ -2,8 +2,8 @@
 @use "sass:color";
 
 // --- Footer shadows ---
-$footer-shadow-black: 0 0 12px #000, 0 0 10px #000, 0 0 8px #000 !important;
-$footer-shadow-white: 0 0 24px #fff, 0 0 10px #fff !important;
+$footer-shadow-black: 0 0 10px #000, 0 0 10px #000, 0 0 10px #000, 0 0 20px #000, 0 0 20px #000 !important;
+$footer-shadow-white: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #fff !important;
 
 // --- Footer ---
 footer {
@@ -11,7 +11,7 @@ footer {
   font-size: $font-size-small;
   color: $color-light;
   height: 32rem;
-  background: url('/no.jpg') no-repeat center center;
+  background: url('/bg.jpg') no-repeat center center;
   background-size: cover;
   color: $color-white;
   padding: $padding-lg 0;

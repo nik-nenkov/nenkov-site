@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('/no.jpg');
+  background-image: url('/bg.jpg');
   background-size: cover;
   background-position: center;
   background-color: $color-dark;
@@ -114,7 +114,7 @@
     display: block;
     padding: 2rem;
     color: #111 !important;
-    text-shadow: 0 0 3px white, 0 0 10px aquamarine, 0 0 20px whitesmoke, 0 0 40px aquamarine;
+    text-shadow: 0 0 13px white, 0 0 20px aquamarine, 0 0 30px whitesmoke, 0 0 50px aquamarine;
     }
   h1 {
     font-size: 2.7rem;
@@ -123,7 +123,7 @@
     letter-spacing: 0.03em;
     color: #1a237e;
     line-height: 1.1;
-    text-shadow: 0 0 3px white, 0 0 8px aquamarine, 0 0 15px white, 0 0 20px aquamarine;
+    text-shadow: 0 0 13px white, 0 0 18px aquamarine, 0 0 25px white, 0 0 30px aquamarine;
     @media (max-width: $screen-sm) {
       justify-content: top;
       vertical-align: top;

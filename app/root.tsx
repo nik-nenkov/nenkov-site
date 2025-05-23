@@ -14,8 +14,8 @@ import AppFooter from "./components/footer/app-footer";
 
 export const links: Route.LinksFunction = () => [
   // Preload and prefetch images
-  { rel: "preload", fetchPriority: "high", as: "image", href: "/no.jpg", type: "image/jpg" },
-  { rel: "prefetch", href: "/no.jpg", as: "image" },
+  { rel: "preload", fetchPriority: "high", as: "image", href: "/bg.jpg", type: "image/jpg" },
+  { rel: "prefetch", href: "/bg.jpg", as: "image" },
   { rel: "preload", fetchPriority: "high", as: "image", href: "/Nik-123.png", type: "image/jpg" },
   { rel: "prefetch", href: "/Nik-123.png", as: "image" },
 
