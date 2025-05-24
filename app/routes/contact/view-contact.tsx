@@ -10,7 +10,7 @@ export function meta() {
     {
       name: "description",
       content:
-        "Contact Nikolay Nenkov, Full Stack Developer based in Sofia, Bulgaria. Email: nik.nenkov@icloud.com, Phone: +359 888 123 456.",
+        "Contact Nikolay Nenkov, Full Stack Developer based in Sofia, Bulgaria. Email: nik@nenkov.site, Phone: +359 888 123 456.",
     },
   ];
 }
@@ -24,7 +24,7 @@ export default function ViewContact() {
         <h1>Contact Me</h1>
         <div className="contact-details">
           <p>
-            <strong>Email:</strong> nik.nenkov@icloud.com
+            <strong>Email:</strong> nik@nenkov.site
           </p>
           <p>
             <strong>Phone:</strong> +359 888 123 456

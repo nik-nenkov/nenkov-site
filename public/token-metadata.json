@@ -1,0 +1,19 @@
+{
+  "name": "NenkovToken",
+  "symbol": "NKV",
+  "description": "NenkovToken (NKV) is a sample SPL token created for demonstration purposes.",
+  "image": "https://nenkov.site/images/Nik.png",
+  "decimals": 9,
+  "seller_fee_basis_points": 0,
+  "attributes": [],
+  "external_url": "https://nenkov.site",
+  "properties": {
+    "files": [
+      {
+        "uri": "https://nenkov.site/images/Nik.png",
+        "type": "image/png"
+      }
+    ],
+    "category": "image"
+  }
+}

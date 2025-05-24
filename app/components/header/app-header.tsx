@@ -55,16 +55,16 @@ export default function AppHeader() {
           <p style={{ color: "gold" }}>{t("fullStackDeveloper")}</p>
           <p>
             <FontAwesomeIcon icon={faEnvelope} />{" "}
-            <a href="mailto:nik.nenkov@icloud.com">
-              nik.nenkov@icloud.com
+            <a href="mailto:nik@nenkov.site">
+              nik@nenkov.site
             </a>
           </p>
-          <p>
+          {/* <p>
             <FontAwesomeIcon icon={faPhone} />{" "}
             <a href="tel:+359890138750">
               +359 890 138 750
             </a>
-          </p>
+          </p> */}
         </div>
       </div>
       {/* Language Switcher */}

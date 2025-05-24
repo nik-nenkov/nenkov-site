@@ -18,8 +18,8 @@
     // Position the expandable menu
     .expandable-menu {
       position: absolute;
-      bottom: 20px; // Position 20px from the bottom of the header
-      right: 20px; // Position 20px from the right of the header
+      bottom: 7px; // Position 7px from the bottom of the header
+      right: 7px; // Position 7px from the right of the header
     }
   }
   
@@ -125,8 +125,8 @@
   margin-top: 0.5rem;
 
   .lang-btn {
-    background: #f8f9fd;
-    border: 1.5px solid #e0e4ef;
+    background: #f8f9fd80;
+    border: 1.5px solid goldenrod;
     border-radius: 50%;
     width: 3rem;
     height: 3rem;
@@ -142,9 +142,9 @@
 
     &.active,
     &:hover {
-      border: 2px solid aquamarine;
+      border: 2px solid goldenrod;
       box-shadow: 0 0 6px #b3d1ff;
-      background: #e3e8f7;
+      background: #e3e8f7d5;
     }
   }
 

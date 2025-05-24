@@ -41,8 +41,8 @@ export default function SocialLinks() {
         </li>
         <li>
           <a
-            href="mailto:nik.nenkov@icloud.com"
-            aria-label="Send me an email at nik.nenkov@icloud.com"
+            href="mailto:nik@nenkov.site"
+            aria-label="Send me an email at nik@nenkov.site"
           >
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
