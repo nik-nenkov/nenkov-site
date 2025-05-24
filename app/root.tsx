@@ -8,16 +8,17 @@ import {
   ScrollRestoration,
 } from "react-router";
 
+
 import type { Route } from "./+types/root";
 import "./root.scss";
 import AppFooter from "./components/footer/app-footer";
 
 export const links: Route.LinksFunction = () => [
   // Preload and prefetch images
-  { rel: "preload", fetchPriority: "high", as: "image", href: "/bg.jpg", type: "image/jpg" },
-  { rel: "prefetch", href: "/bg.jpg", as: "image" },
-  { rel: "preload", fetchPriority: "high", as: "image", href: "/Nik-123.png", type: "image/jpg" },
-  { rel: "prefetch", href: "/Nik-123.png", as: "image" },
+  { rel: "preload", fetchPriority: "high", as: "image", href: "/images/wallpaper.webp", type: "image/webp" },
+  { rel: "prefetch", href: "/images/wallpaper.webp", as: "image" },
+  { rel: "preload", fetchPriority: "high", as: "image", href: "/images/avatar.webp", type: "image/webp" },
+  { rel: "prefetch", href: "/images/avatar.webp", as: "image" },
 
   // Icons (favicon and app icons)
   { rel: "icon", type: "image/png", sizes: "32x32", href: "icons/icon-32x32.png" },

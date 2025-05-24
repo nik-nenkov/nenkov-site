@@ -1,6 +1,8 @@
+@use "/app/styles/constants" as *;
+
 .diagrams-section {
   padding: 2rem;
-  font-family: Arial, sans-serif;
+  font-family: $font-primary;
   line-height: 1.6;
 
   h1 {

@@ -36,9 +36,10 @@ export default function AppHeader() {
     <header className="App-header">
       <div className="profile-container">
         <img
-          src="/Nik-123.png"
+          src="/images/avatar.webp"
           alt={t("nikNenkov")}
           className="profile-photo"
+          fetchPriority="high"
           title="Follow on LinkedIn"
           onClick={() =>
             window.open(
@@ -53,13 +54,13 @@ export default function AppHeader() {
           <p>
             <FontAwesomeIcon icon={faEnvelope} />{" "}
             <a href="mailto:nik.nenkov@icloud.com">
-              {t("contactEmail")}: nik.nenkov@icloud.com
+              nik.nenkov@icloud.com
             </a>
           </p>
           <p>
             <FontAwesomeIcon icon={faPhone} />{" "}
             <a href="tel:+359890138750">
-              {t("contactPhone")}: +359 890 138 750
+              +359 890 138 750
             </a>
           </p>
         </div>

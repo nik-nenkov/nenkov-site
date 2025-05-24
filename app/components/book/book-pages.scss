@@ -1,3 +1,5 @@
+@use "/app/styles/constants" as *;
+
 .book-layout {
   display: flex;
   min-height: 100vh;
@@ -140,7 +142,7 @@ min-height: 537.6px;
 }
 
 .page-number {
-  font-family: 'Georgia', serif;
+  font-family: $font-primary;
   font-size: 1.1rem;
   color: #b0a48a;
   letter-spacing: 0.1em;

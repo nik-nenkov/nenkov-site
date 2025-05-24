@@ -2,7 +2,7 @@ from PIL import Image
 import os
 
 # Source image
-source_path = "/home/nik/Desktop/Git/nenkov-site/public/Nik-123.png"
+source_path = "/home/nik/Desktop/Git/nenkov-site/public/images/avatar.png"
 
 # Target icon sizes and filenames
 targets = [
