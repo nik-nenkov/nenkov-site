@@ -2,5 +2,143 @@
   "nikNenkov": "Nik Nenkov",
   "fullStackDeveloper": "Full Stack Software Developer",
   "contactEmail": "Email",
-  "contactPhone": "Phone"
+  "contactPhone": "Phone",
+
+  "personalProfileTitle": "Personal Profile",
+  "personalProfileText": "Nature lover, visual arts enthusiast, Mediterranean food fan.\nAs an experienced full-stack developer, capable of supporting and extending your existing IT systems, and designing and implementing new ones, I can contribute to your organization by reducing long-term costs, organizing your documentation, integrating third-party software, and leading junior developers. My goals are centred around clear communication, synchronising people with different roles onsite and remotely, and working in stakeholders' best interests. Interdisciplinary knowledge gained throughout the years is allowing me to ask better questions, look at the greater scale of things as well as improving and fixing the details expected by the designers, managers, DevOps and QA teams, and customers.",
+
+  "workExperienceTitle": "Work Experience",
+  "workExperienceList": [
+    {
+      "title": "Software Development Contractor | Various Clients",
+      "period": "May 2023 - Present",
+      "desc1": "As a freelance contractor, I have delivered end-to-end solutions for international clients, including the development of a crypto gaming and marketing platform enabling players to earn cryptocurrency tokens through daily gaming and ad-watching experiences. My work involved collaborating with distributed teams across the UK and Bulgaria, integrating third-party services such as Azure Cognitive Services and Stripe, and mentoring junior developers. I have modernized legacy systems, replaced outdated backends with Node.js-based solutions, and improved SDLC practices for ticketing and supply chain platforms. My responsibilities have included project setup, repository management, design documentation, deployment strategies, and requirements analysis in asynchronous environments.",
+      "desc2": "I have maintained and extended legacy Java code, delivered backend services, REST APIs, frontends, and business automation scripts, and ensured system stability for platforms using discontinued frameworks. My work has spanned domains such as supply chain, ticketing, geolocation, and payment processing, always focusing on clear communication, stakeholder alignment, and technical excellence."
+    },
+    {
+      "title": "Senior Full Stack Developer | CODEXIO Ltd.",
+      "period": "Mar 2021 - Apr 2023 | Hybrid",
+      "desc1": "At Codexio, I contributed to high-traffic digital wallet applications for multinational online payments providers, integrating Sportradar widgets and APIs, and developing reusable Angular component libraries for live sports data. I worked on projects in electronic payments, traffic engineering, and online gaming, collaborating with global teams to deliver robust, scalable solutions. My role included mentoring junior developers, ensuring high code quality through thorough testing and code reviews, and implementing new features such as free spins to increase user engagement. I also developed tools for traffic engineering and public transport optimization, building ETL jobs, programming traffic controllers, and running large-scale simulations.",
+      "desc2": ""
+    },
+    {
+      "title": "Java Web Developer | Freelance",
+      "period": "Oct 2019 - Mar 2021 | Remote",
+      "desc1": "As a freelance Java developer, I built tools for tracking business spendings and managing vendor performance for large organizations, including backend development using ElasticSearch, Spring Data REST, and PostgreSQL. I collaborated directly with product owners and architects, participated in stakeholder meetings, and contributed to system diagrams and documentation. My work included developing secure REST APIs, integrating with cloud environments, and automating business workflows for clients in retail and logistics.",
+      "desc2": ""
+    },
+    {
+      "title": "Java Software Developer | EPAM Systems, Inc.",
+      "period": "May 2018 - Oct 2019 | On-site",
+      "desc1": "At EPAM Systems, I developed and maintained access control management systems and admin panels, enabling secure communication with physical devices via MQTT and providing rich JavaFX-based interfaces. I contributed to the Weekly Java Newsletter, curated for 20,000+ employees, and developed internal tools for hardware resource tracking, RESTful APIs, and OAuth2 integration. My work emphasized secure, scalable architectures, automated build and testing workflows, and close collaboration with UI/UX designers and delivery managers.",
+      "desc2": ""
+    },
+    {
+      "title": "Technology Consultant | Freelance",
+      "period": "2009 - 2017",
+      "desc1": "As a technology consultant, I delivered custom software solutions, website maintenance, and tutoring services. I engineered software for complex electrical engineering equations, built a CodeIgniter-based CMS for a local restaurant, and deployed MMORPG servers with SQL databases and user registration websites. My work included 3D CAD modeling in SolidWorks for furniture and machinery, tutoring in IT, physics, math, chemistry, and programming, and developing secure C++ CLI chat applications. I also conducted photovoltaic system calculations for solar energy solutions and contributed to data entry and QA for startups, ensuring data accuracy and process quality.",
+      "desc2": ""
+    }
+  ],
+
+  "educationTitle": "Education",
+  "educationList": [
+    {
+      "title": "High School of Mathematics and Natural Science | Gabrovo, Bulgaria",
+      "period": "2005 - 2010",
+      "desc": "Focused on Mathematics, Informatics and English Language. The curriculum emphasized mathematics, with additional skills gained in Visual Studio, HTML, CSS, PHP and C/C++ programming. Participated in drama classes and field trips, enhancing creative expression and broadening perspectives. The first year concentrated on English language proficiency."
+    },
+    {
+      "title": "Technical University | Gabrovo, Bulgaria",
+      "period": "2010 - 2013",
+      "desc": "Studied Electrical Engineering Technologies/Technicians. Covered topics ranging from basic electrical laws to complex circuits, CAD modeling, and coding to support studies. Gained hands-on experience with microchips and large-scale machines. Although studies were not completed due to personal reasons, the knowledge acquired has been invaluable in professional development."
+    }
+  ],
+
+  "skillsTitle": "Skills",
+  "skillsList": [
+    {
+      "category": "Full-stack development",
+      "items": "Java, SpringBoot, JSP, Quarkus, Angular, VueJS, React, TypeScript, Golang, Python, Node.js, PHP, JavaFX, C++, JavaScript, HTML, SASS, CSS, Bash"
+    },
+    {
+      "category": "Software testing",
+      "items": "E2E, UI, API, unit, integration, mocking, automated build and testing workflows, code reviews"
+    },
+    {
+      "category": "Cloud and DevOps",
+      "items": "Docker, Kubernetes, Azure, CI/CD pipelines, VPS, AWS, XAMPP, cPanel, SSH, DNS, Content Distribution Networks"
+    },
+    {
+      "category": "System design and debugging",
+      "items": "Sequence and C4 model UML diagrams, log analysis, system tracing, software architecture, software design, requirements analysis, stakeholder alignment"
+    },
+    {
+      "category": "API development and integration",
+      "items": "REST, OAuth, MQTT, ETL, SQL, WS, libraries, services, OpenAPI Specification (OAS), 3rd Party Integrations, Stripe, Azure Cognitive Services, PDF Creator"
+    },
+    {
+      "category": "Agile workflows",
+      "items": "Jira, Figma, async collaboration with global teams, Confluence, project setup, repository management, design documentation"
+    },
+    {
+      "category": "Technical consulting and team support",
+      "items": "Mentoring, project optimization, tutoring, onboarding, documentation, requirements gathering, team leadership"
+    },
+    {
+      "category": "Data and Visualization",
+      "items": "Data Mining, Data Visualization, PostgreSQL, ElasticSearch, ORM, Liquibase, reporting, OpenStreetMap, Thymeleaf"
+    },
+    {
+      "category": "Other",
+      "items": "CAD (SolidWorks, AutoCAD), Construction Estimating, Problem Solving, Client Delivery, Research and Development (R&D), Printing, Sequence Diagrams, JWT, Single Page Applications"
+    }
+  ],
+
+  "referencesTitle": "References",
+  "referencesText": "Available upon request.",
+
+  "footerThankYouTitle": "Thank You",
+  "footerThankYouText1": "Thank you for your time and attention!",
+  "footerThankYouText2": "I offer end-to-end software development, system integration, technical consulting, and mentoring services.",
+  "footerThankYouText3": "If you are looking for a reliable partner to modernize your IT systems, optimize workflows, or bring your ideas to life, feel free to connect with me.",
+  "footerNavHome": "Home",
+  "footerNavAbout": "About Nik",
+  "footerNavSkills": "Skills",
+  "footerNavContact": "Contact",
+  "footerNavCourses": "Courses",
+  "footerNavDiagrams": "Diagrams",
+  "footerNavProjects": "Projects",
+  "footerNavBooks": "Books",
+  "footerCopyright": "© 2025 Nikolay Nenkov",
+
+  "aboutTitle": "About Nik",
+  "aboutWelcome": "Welcome to my professional website! My name is Nikolay Nenkov, and I am a passionate full-stack developer with extensive experience in building robust, scalable, and innovative solutions. This website serves as a showcase of my professional journey, achievements, and the services I provide.",
+  "aboutExperienceTitle": "Professional Experience",
+  "aboutExperienceText": "Over the years, I have worked on a variety of projects, ranging from enterprise-level applications to cutting-edge cloud solutions. My expertise spans frontend and backend development, cloud and DevOps, system design, and technical consulting.",
+  "aboutServicesTitle": "Services I Provide",
+  "aboutServicesList": [
+    "Full-stack development for web and mobile applications",
+    "Cloud and DevOps solutions, including CI/CD pipelines",
+    "System design and architecture consulting",
+    "API development and integration",
+    "Technical mentoring and team support"
+  ],
+  "aboutAchievementsTitle": "Achievements",
+  "aboutAchievementsIntro": "Throughout my career, I have achieved several milestones, including:",
+  "aboutAchievementsList": [
+    "Successfully leading development teams on complex projects",
+    "Delivering high-quality software solutions under tight deadlines",
+    "Contributing to open-source projects and technical communities",
+    "Receiving recognition for innovative problem-solving and leadership"
+  ],
+  "aboutFuturePlansTitle": "Future Plans",
+  "aboutFuturePlansText": "I am constantly seeking new challenges and opportunities to grow. My future plans include exploring emerging technologies, expanding my expertise in AI and machine learning, and collaborating with global teams to create impactful solutions.",
+  "aboutLookingTitle": "Looking for New Challenges",
+  "aboutLookingText": "I am always open to exciting opportunities and collaborations. If you have a project or idea that aligns with my skills and interests, feel free to reach out!",
+
+  "menuProjects": "Projects",
+  "menuCourses": "Courses",
+  "menuDiagrams": "Diagrams",
+  "menuBooks": "Books"
 }

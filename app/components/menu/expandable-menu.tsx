@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "./expandable-menu.scss";
 
 export default function ExpandableMenu() {
+    const { t } = useTranslation();
+
     return (
         <div className="expandable-menu">
             <input type="checkbox" id="menu-toggle" className="menu-toggle" />
@@ -10,10 +13,10 @@ export default function ExpandableMenu() {
             </label>
             <nav className="menu">
                 <ul>
-                    <li><Link to="/projects">Projects</Link></li>
-                    <li><Link to="/courses">Courses</Link></li>
-                    <li><Link to="/diagrams">Diagrams</Link></li>
-                    <li><Link to="/books">Books</Link></li>
+                    <li><Link to="/projects">{t("menuProjects")}</Link></li>
+                    <li><Link to="/courses">{t("menuCourses")}</Link></li>
+                    <li><Link to="/diagrams">{t("menuDiagrams")}</Link></li>
+                    <li><Link to="/books">{t("menuBooks")}</Link></li>
                 </ul>
             </nav>
         </div>

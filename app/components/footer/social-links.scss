@@ -4,6 +4,8 @@
 $footer-shadow-white: 0 0 24px #fff, 0 0 10px #fff !important;
 
 .social-links-section {
+  width: 50%;
+  margin: 0 auto;
   h2 {
     font-size: 1.5rem;
     text-align: left;
@@ -49,6 +51,7 @@ $footer-shadow-white: 0 0 24px #fff, 0 0 10px #fff !important;
     }
   }
   @media (max-width: $screen-sm) {
+    width: 80%;
     .social-links {
       gap: $social-gap-md;
       li a {
@@ -60,6 +63,7 @@ $footer-shadow-white: 0 0 24px #fff, 0 0 10px #fff !important;
     }
   }
   @media (max-width: $screen-xs) {
+    width: 80%;
     .social-links {
       gap: $social-gap-sm;
       li a {
