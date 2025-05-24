@@ -1,10 +1,24 @@
 import React from "react";
+import { Meta } from "react-router";
 import "./view-skills.scss";
 import TopBar from "~/components/bar/top-bar";
+
+// SEO meta function
+export function meta() {
+  return [
+    { title: "Full Stack Developer Skills | Nikolay Nenkov" },
+    {
+      name: "description",
+      content:
+        "Explore the comprehensive skill set of Nikolay Nenkov, Full Stack Developer. Frontend, backend, cloud, DevOps, system design, testing, data, consulting, and more.",
+    },
+  ];
+}
 
 export default function ViewSkills() {
   return (
     <>
+      <Meta />
       <TopBar title="Full Stack Skills" />
       <section className="skills-section">
         <dl>

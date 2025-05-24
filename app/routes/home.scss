@@ -88,9 +88,9 @@ section {
 
         a{
           text-decoration: none;
-          color: $color-mid;
+          color: #733390;
           @media (prefers-color-scheme: dark) {
-            color: rgba($color: #7f95ce, $alpha: 1.0);
+            color: rgba($color: #d77fff, $alpha: 1.0);
           }
         }
       }

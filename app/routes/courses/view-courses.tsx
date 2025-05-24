@@ -1,6 +1,15 @@
 import React from "react";
+import { Meta } from "react-router";
 import "./view-courses.scss";
 import TopBar from "~/components/bar/top-bar";
+
+// SEO meta function
+export function meta() {
+  return [
+    { title: "Courses to Teach | Nikolay Nenkov" },
+    { name: "description", content: "Discover a curated list of software development, design, and best practices courses taught by Nikolay Nenkov. Topics include SDLC, OAuth2, Spring Boot, Docker, testing, and more." }
+  ];
+}
 
 export default function ViewCourses() {
   const courses = [
@@ -25,21 +34,22 @@ export default function ViewCourses() {
   ];
 
   return (
-      <>
+    <>
+      <Meta />
       <TopBar title="Courses to Teach"/>
-    <section className="courses-section">
-      <p>
-        Here is a collection of courses I enjoy teaching, covering a wide range of topics in software development, design, and best practices.
-      </p>
-      <div className="courses-gallery">
-        {courses.map((course, index) => (
-          <div className="course-card" key={index}>
-            <h2>{course.title}</h2>
-            <p>{course.description}</p>
-          </div>
-        ))}
-      </div>
-    </section>
+      <section className="courses-section">
+        <p>
+          Here is a collection of courses I enjoy teaching, covering a wide range of topics in software development, design, and best practices.
+        </p>
+        <div className="courses-gallery">
+          {courses.map((course, index) => (
+            <div className="course-card" key={index}>
+              <h2>{course.title}</h2>
+              <p>{course.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
     </>
   );
 }

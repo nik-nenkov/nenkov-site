@@ -36,10 +36,12 @@ export default function AppHeader() {
     <header className="App-header">
       <div className="profile-container">
         <img
-          src="/images/avatar.webp"
+          src="/images/avatar_192x192.webp"
           alt={t("nikNenkov")}
           className="profile-photo"
           fetchPriority="high"
+          width="192"
+          height="192"
           title="Follow on LinkedIn"
           onClick={() =>
             window.open(

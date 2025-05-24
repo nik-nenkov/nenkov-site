@@ -1,13 +1,27 @@
 import React from "react";
+import { Meta } from "react-router";
 import "./view-books.scss";
 import TopBar from "~/components/bar/top-bar";
 import type { Book } from "~/components/book/book-types";
 import { books } from "~/components/book/book-config";
 import { Link } from "react-router-dom";
 
+// SEO meta function
+export function meta() {
+  return [
+    { title: "Books | Software Craftsmanship Series - Nikolay Nenkov" },
+    {
+      name: "description",
+      content:
+        "Explore the Software Craftsmanship book series by Nikolay Nenkov. Practical insights and best practices for software professionals across the entire development lifecycle.",
+    },
+  ];
+}
+
 export default function ViewBooks() {
   return (
     <>
+      <Meta />
       <TopBar title="Software Craftsmanship: In the Life of a Project" />
       <section className="books-section">
         <p>

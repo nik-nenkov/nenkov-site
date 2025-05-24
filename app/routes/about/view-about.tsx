@@ -1,10 +1,19 @@
 import React from "react";
 import "./view-about.scss";
 import TopBar from "~/components/bar/top-bar";
+import { Meta } from "react-router";
+// SEO meta function
+export function meta() {
+  return [
+    { title: "About Nikolay Nenkov - Full Stack Developer" },
+    { name: "description", content: "Learn more about Nikolay Nenkov, a passionate full-stack developer with expertise in web, cloud, and system design. Discover his experience, achievements, and services." }
+  ];
+}
 
 export default function ViewAbout() {
   return (
         <>
+      <Meta />
           <TopBar title="About Nik" />
     <section className="about-section">
       <p>

@@ -7,18 +7,23 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
-
+import React from "react";
 
 import type { Route } from "./+types/root";
 import "./root.scss";
 import AppFooter from "./components/footer/app-footer";
 
 export const links: Route.LinksFunction = () => [
+  { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+  { rel: "stylesheet", href: "/fonts/inter.css" },
+  { rel: "stylesheet", href: "/fonts/material-icons.css" },
+
   // Preload and prefetch images
   { rel: "preload", fetchPriority: "high", as: "image", href: "/images/wallpaper.webp", type: "image/webp" },
   { rel: "prefetch", href: "/images/wallpaper.webp", as: "image" },
-  { rel: "preload", fetchPriority: "high", as: "image", href: "/images/avatar.webp", type: "image/webp" },
-  { rel: "prefetch", href: "/images/avatar.webp", as: "image" },
+  { rel: "preload", fetchPriority: "high", as: "image", href: "/images/avatar_192x192.webp", type: "image/webp" },
+  { rel: "prefetch", href: "/images/avatar_192x192.webp", as: "image" },
+  { rel: "preload", as: "font", href: "/fonts/Material-Icons.woff2", type: "font/woff2", crossOrigin: "anonymous" },
 
   // Icons (favicon and app icons)
   { rel: "icon", type: "image/png", sizes: "32x32", href: "icons/icon-32x32.png" },
@@ -38,18 +43,6 @@ export const links: Route.LinksFunction = () => [
 
   // Manifest
   { rel: "manifest", href: "manifest.json", crossOrigin: "anonymous" },
-
-  // Fonts
-  { rel: "preconnect", href: "https://fonts.googleapis.com" },
-  { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-  {
-    rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
-  },
-  {
-    rel: "stylesheet",
-    href: "https://fonts.googleapis.com/icon?family=Material+Icons",
-  },
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -106,5 +99,20 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
         </pre>
       )}
     </main>
+  );
+}
+
+export function hydrateFallback() {
+  // You can use any React component here (spinner, skeleton, etc)
+  return (
+    <div style={{
+      minHeight: "100vh",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      fontSize: "1.5rem"
+    }}>
+      <span>Зареждане…</span>
+    </div>
   );
 }

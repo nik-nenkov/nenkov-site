@@ -5,10 +5,10 @@
   ],
   "compilerOptions": {
     // Target the latest JavaScript features
-    "target": "ES2024", // Use ES2024 for the latest JavaScript features
-    "module": "ES2022", // Use ES2022 module system
+    "target": "ESNext", // Use ESNext for the latest JavaScript features
+    "module": "ESNext", // Use ESNext module system
     "moduleResolution": "bundler", // Use bundler resolution for modern tools like Vite
-    "lib": ["DOM", "DOM.Iterable", "ES2024"], // Include ES2024 and DOM libraries
+    "lib": ["DOM", "DOM.Iterable", "ESNext"], // Include ESNext and DOM libraries
     "jsx": "react-jsx", // Use React JSX runtime
     "types": ["node", "vite/client"], // Include Node.js and Vite types
     "baseUrl": ".", // Base URL for module resolution

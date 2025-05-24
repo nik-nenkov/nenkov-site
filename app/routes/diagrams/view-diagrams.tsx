@@ -1,14 +1,32 @@
 import React from "react";
+import { Meta } from "react-router";
 import "./view-diagrams.scss";
 import TopBar from "~/components/bar/top-bar";
+
+// SEO meta function
+export function meta() {
+  return [
+    { title: "Software Architecture Diagrams | Nikolay Nenkov" },
+    {
+      name: "description",
+      content:
+        "Explore a curated gallery of software architecture, UML, and system design diagrams by Nikolay Nenkov. Includes C4, UML sequence, component, deployment, data flow, ER, state, activity, and class diagrams.",
+    },
+  ];
+}
 
 export default function ViewDiagrams() {
   return (
     <>
+      <Meta />
       <TopBar title="Software Architecture Diagrams" />
       <section className="diagrams-section">
         <p>
-          Explore a collection of diagrams that showcase my expertise in software architecture, system design, and professional software development. These diagrams include C4-style architecture diagrams, UML sequence diagrams, and other visualizations that demonstrate my ability to design and document complex systems and services.
+          Explore a collection of diagrams that showcase my expertise in software
+          architecture, system design, and professional software development. These
+          diagrams include C4-style architecture diagrams, UML sequence diagrams, and
+          other visualizations that demonstrate my ability to design and document
+          complex systems and services.
         </p>
 
         <div className="diagrams-gallery">
@@ -19,7 +37,8 @@ export default function ViewDiagrams() {
               alt="C4 Context Diagram"
             />
             <p>
-              A high-level overview of a system and its interactions with external actors.
+              A high-level overview of a system and its interactions with external
+              actors.
             </p>
           </div>
 
@@ -41,7 +60,8 @@ export default function ViewDiagrams() {
               alt="System Component Diagram"
             />
             <p>
-              A breakdown of the system into its core components and their relationships.
+              A breakdown of the system into its core components and their
+              relationships.
             </p>
           </div>
 
@@ -64,7 +84,8 @@ export default function ViewDiagrams() {
               alt="Data Flow Diagram"
             />
             <p>
-              Illustrates how data flows through a system, including inputs, processes, and outputs.
+              Illustrates how data flows through a system, including inputs,
+              processes, and outputs.
             </p>
           </div>
 
@@ -75,7 +96,8 @@ export default function ViewDiagrams() {
               alt="ER Diagram"
             />
             <p>
-              Represents the relationships between entities in a database, helping with database design.
+              Represents the relationships between entities in a database, helping
+              with database design.
             </p>
           </div>
 
@@ -86,7 +108,8 @@ export default function ViewDiagrams() {
               alt="State Diagram"
             />
             <p>
-              Describes the states of an object and the transitions between those states.
+              Describes the states of an object and the transitions between those
+              states.
             </p>
           </div>
 
@@ -97,7 +120,8 @@ export default function ViewDiagrams() {
               alt="Activity Diagram"
             />
             <p>
-              Visualizes workflows and processes, showing the sequence of activities in a system.
+              Visualizes workflows and processes, showing the sequence of activities
+              in a system.
             </p>
           </div>
 
@@ -108,7 +132,8 @@ export default function ViewDiagrams() {
               alt="Class Diagram"
             />
             <p>
-              Models the structure of a system by showing its classes, attributes, methods, and relationships.
+              Models the structure of a system by showing its classes, attributes,
+              methods, and relationships.
             </p>
           </div>
         </div>
