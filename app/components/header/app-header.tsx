@@ -8,16 +8,17 @@ import { useTranslation } from "react-i18next";
 // Language options with flag emojis
 const languages = [
   { code: "bg", label: "Български", flag: "🇧🇬" },
-  { code: "en", label: "English", flag: "🇬🇧" },
-  { code: "fr", label: "Français", flag: "🇫🇷" },
-  { code: "de", label: "Deutsch", flag: "🇩🇪" },
-  { code: "el", label: "Ελληνικά", flag: "🇬🇷" },
-  { code: "es", label: "Español", flag: "🇪🇸" },
+  { code: "us", label: "International", flag: "🇺🇸" },
+  // { code: "en", label: "English", flag: "🇬🇧" },
+  // { code: "fr", label: "Français", flag: "🇫🇷" },
+  // { code: "de", label: "Deutsch", flag: "🇩🇪" },
+  // { code: "el", label: "Ελληνικά", flag: "🇬🇷" },
+  // { code: "es", label: "Español", flag: "🇪🇸" },
 ];
 
 export default function AppHeader() {
   const { t, i18n } = useTranslation();
-  const [lang, setLang] = useState(i18n.language || "bg");
+  const [lang, setLang] = useState(i18n.language || "us");
   const [showLangList, setShowLangList] = useState(false);
 
   // Sync local lang state with i18n language

@@ -122,15 +122,22 @@
   align-items: center;
   position: relative;
   margin-bottom: 1rem;
-  margin-top: 0.5rem;
+  @media screen and (max-width: 800px) {
+    margin-top: -0.25rem;
+    margin-right: -0.25rem;
+  }
+  // margin-top: -0.5rem;
 
   .lang-btn {
-    background: #f8f9fd80;
-    border: 1.5px solid goldenrod;
+    // background: #f8f9fd80;
+    // border: 1.5px solid goldenrod;
+    background: none;
+    border: none;
     border-radius: 50%;
     width: 3rem;
     height: 3rem;
-    font-size: 1.35rem;;
+    font-size: 1.5rem;
+    text-shadow: 0 0 3px black,0 0 4px black,0 0 12px white,0 0 16px white;
     cursor: pointer;
     transition: border 0.2s, box-shadow 0.2s;
     display: flex;
@@ -139,24 +146,39 @@
     outline: none;
     padding: 0;
     margin-right: 0.2rem;
-
+@media screen and (max-width: 800px) {
+    font-size: 1.2rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    
+  }
     &.active,
     &:hover {
-      border: 2px solid goldenrod;
-      box-shadow: 0 0 6px #b3d1ff;
-      background: #e3e8f7d5;
+      font-size: 2rem;
+@media screen and (max-width: 800px) {
+    font-size: 1.5rem;
+
+  }
+      // border: 2px solid goldenrod;
+      // box-shadow: 0 0 6px #b3d1ff;
+      // background: #e3e8f7d5;
     }
   }
 
   .lang-list {
     position: absolute;
     top: -0.3rem;
-    left: -18rem;
+    left: -4rem;
     display: flex;
     gap: 0.3rem;
     background: none;
     border-radius: 1.5rem;
     padding: 0.3rem 0.5rem;
     z-index: 10;
+@media screen and (max-width: 800px) {
+  // top:0;
+    left: -14rem;
+    
+  }
   }
 }

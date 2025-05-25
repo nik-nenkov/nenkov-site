@@ -40,7 +40,7 @@ export default function Home() {
               <li key={idx}>
                 <h3>{item.title}</h3>
                 <h4>{item.period}</h4>
-                <p>{item.desc1}</p>
+                <p>{item.desc}</p>
                 {item.desc2 && <p>{item.desc2}</p>}
               </li>
             ))}
@@ -51,9 +51,21 @@ export default function Home() {
           <ul>
             {educationList.map((item, idx) => (
               <li key={idx}>
-                <h3>{item.title}</h3>
-                <h4>{item.period}</h4>
-                <p>{item.desc}</p>
+          <h3>
+            {item.url ? (
+              <a href={item.url} target="_blank" rel="noopener noreferrer">
+                {item.title}
+              </a>
+            ) : (
+              item.title
+            )}
+          </h3>
+          <h4>{item.period} | {item.location}</h4>
+          <div className="major">
+            <strong>{t("majorLabel")}: </strong>
+            {item.major}
+          </div>
+          <p>{item.desc}</p>
               </li>
             ))}
           </ul>
