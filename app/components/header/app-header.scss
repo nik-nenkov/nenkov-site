@@ -1,131 +1,140 @@
 @use "/app/styles/constants" as *;
 @use "sass:color";
+
 // --- Header Styles ---
 .App-header {
-    background-image: url('/images/wallpaper.webp');
-    background-size: cover;
-    background-position: center;
-    color: $color-white;
-    text-align: left;
-    display: flex;
+  background-image: url('/images/wallpaper.webp');
+  background-size: cover;
+  background-position: center;
+  color: $color-white;
+  text-align: left;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: $header-padding-sm;
+  height: 18.5rem !important;
+  position: relative; // Enable positioning for child elements
+
+
+  // Position the expandable menu
+  .expandable-menu {
+    position: absolute;
+    bottom: 7px; // Position 7px from the bottom of the header
+    right: 7px; // Position 7px from the right of the header
+  }
+}
+
+// --- Profile Container ---
+.profile-container {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  border-radius: 50%;
+
+  @media (max-width: 800px) {
+    flex-flow: column;
+    align-self: start;
     align-items: start;
-    justify-content: space-between;
-    padding: $header-padding-sm;
-    height: 18.5rem !important; 
-    position: relative; // Enable positioning for child elements
+  }
 
+  .profile-photo {
+    width: $photo-size-md;
+    height: $photo-size-md;
+    border-radius: 50% !important;
+    margin-right: $spacing-md;
+    border: 2px solid gold;
+    box-shadow: $box-shadow-footer;
+    cursor: pointer;
+    // border: $thick solid $color-accent;
 
-    // Position the expandable menu
-    .expandable-menu {
-      position: absolute;
-      bottom: 7px; // Position 7px from the bottom of the header
-      right: 7px; // Position 7px from the right of the header
+    &:hover {
+      transform: scale(1.025);
+    }
+
+    @media (max-width: 800px) {
+      width: $photo-size-sm;
+      height: $photo-size-sm;
+      border-radius: 1rem;
     }
   }
-  
-  // --- Profile Container ---
-  .profile-container {
-    display: flex;
-    align-items: center;
-    margin-top: 2rem;
-    flex-wrap: wrap;
-      border-radius: 50%;
-  
-    @media (max-width: 800px) {
-      flex-flow: column;
-      align-self: start;
-      align-items: start;
+
+  .contact-info {
+    h1 {
+      font-size: $font-size-h1;
+      margin: 0;
+      padding: 0.5rem 0.2rem 0 0;
+
+      color: $color-white;
+      text-shadow: 0 0 6px black, 0 0 6px black, 0 0 16px black, 0 0 16px black;
+
+      @media (max-width: 800px) {
+        font-size: $font-size-h2; // Adjusted for smaller screens
+      }
+
+      @media (prefers-color-scheme: dark) {
+        color: $color-text-light;
+        text-shadow: 0 0 6px black, 0 0 6px black, 0 0 16px black, 0 0 16px black;
+      }
     }
-  
-    .profile-photo {
-      width: $photo-size-md;
-      height: $photo-size-md;
-      border-radius: 50% !important;
-      margin-right: $spacing-md;
-          border: 2px solid gold;
-          box-shadow: $box-shadow-footer;
-          cursor: pointer;
-      // border: $thick solid $color-accent;
+
+    p {
+      margin: 0 0 $spacing-xs 0;
+      color: $color-white;
+      text-shadow: 0 0 6px black, 0 0 6px black, 0 0 16px black, 0 0 16px black;
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 0 0.3rem;
+      border-radius: 0.75rem;
+
+      @media (max-width: 800px) {
+        font-size: 0.9rem; // Slightly smaller for small screens
+      }
+
+      @media (prefers-color-scheme: dark) {
+        color: $color-text-light;
+        text-shadow: 0 0 6px black, 0 0 6px black, 0 0 16px black, 0 0 16px black;
+      }
+
+      svg {
+        filter: drop-shadow(0 0 6px black);
+      }
+    }
+
+    a {
+      color: $color-white;
+      text-shadow: 0 0 6px black, 0 0 6px black, 0 0 16px black, 0 0 16px black;
+      font-size: 1.2rem;
+      text-decoration: none;
+      font-weight: bold;
+
+      @media (max-width: 800px) {
+        font-size: 0.9rem; // Slightly smaller for small screens
+      }
 
       &:hover {
-        transform: scale(1.025);
+        text-decoration: underline;
       }
-      @media (max-width: 800px) {
-        width: $photo-size-sm;
-        height: $photo-size-sm;
-      border-radius: 1rem;
-      }
-    }
-  
-    .contact-info {
-      h1 {
-        font-size: $font-size-h1;
-        margin: 0;
-        padding: 0.5rem 0.2rem 0 0;
-  
-        color: $color-white;
-        text-shadow: 0 0 6px black,0 0 6px black,0 0 16px black,0 0 16px black;
-        @media (max-width: 800px) {
-          font-size: $font-size-h2; // Adjusted for smaller screens
-        }
-        
-          @media (prefers-color-scheme: dark) {
-            color: $color-text-light;
-            text-shadow: 0 0 6px black,0 0 6px black,0 0 16px black,0 0 16px black;
-          }
-      }
-  
-      p {
-        margin: 0 0 $spacing-xs 0;
-        color: $color-white;
-        text-shadow: 0 0 6px black,0 0 6px black,0 0 16px black,0 0 16px black;
-        font-size: 1.2rem;
-        font-weight: bold;
-        padding: 0 0.3rem;
-        border-radius: 0.75rem;
-  
-        @media (max-width: 800px) {
-          font-size: 0.9rem; // Slightly smaller for small screens
-        }
-        @media (prefers-color-scheme: dark) {
-          color: $color-text-light;
-          text-shadow: 0 0 6px black,0 0 6px black,0 0 16px black,0 0 16px black;
-        }
-        svg {
-          filter: drop-shadow(0 0 6px black);
-        }
-      }
-  
-      a {
-        color: $color-white;
-        text-shadow: 0 0 6px black,0 0 6px black,0 0 16px black,0 0 16px black;
-        font-size: 1.2rem;
-        text-decoration: none;
-        font-weight: bold;
-        @media (max-width: 800px) {
-          font-size: 0.9rem; // Slightly smaller for small screens
-        }
-        &:hover {
-          text-decoration: underline;
-        }
-        
-        @media (prefers-color-scheme: dark) {
-          color: $color-text-light;
-          text-shadow: 0 0 6px black,0 0 6px black,0 0 16px black,0 0 16px black;
-        }
+
+      @media (prefers-color-scheme: dark) {
+        color: $color-text-light;
+        text-shadow: 0 0 6px black, 0 0 6px black, 0 0 16px black, 0 0 16px black;
       }
     }
   }
+}
 
-  .language-switcher {
+.language-switcher {
   display: flex;
   align-items: center;
   position: relative;
   margin-bottom: 1rem;
+
   @media screen and (max-width: 800px) {
     margin-top: -0.25rem;
     margin-right: -0.25rem;
   }
+
   // margin-top: -0.5rem;
 
   .lang-btn {
@@ -137,7 +146,7 @@
     width: 3rem;
     height: 3rem;
     font-size: 1.5rem;
-    text-shadow: 0 0 3px black,0 0 4px black,0 0 12px white,0 0 16px white;
+    text-shadow: 0 0 3px black, 0 0 4px black, 0 0 12px white, 0 0 16px white;
     cursor: pointer;
     transition: border 0.2s, box-shadow 0.2s;
     display: flex;
@@ -146,19 +155,23 @@
     outline: none;
     padding: 0;
     margin-right: 0.2rem;
-@media screen and (max-width: 800px) {
-    font-size: 1.2rem;
-    width: 2.2rem;
-    height: 2.2rem;
-    
-  }
+
+    @media screen and (max-width: 800px) {
+      font-size: 1.2rem;
+      width: 2.2rem;
+      height: 2.2rem;
+
+    }
+
     &.active,
     &:hover {
       font-size: 2rem;
-@media screen and (max-width: 800px) {
-    font-size: 1.5rem;
 
-  }
+      @media screen and (max-width: 800px) {
+        font-size: 1.5rem;
+
+      }
+
       // border: 2px solid goldenrod;
       // box-shadow: 0 0 6px #b3d1ff;
       // background: #e3e8f7d5;
@@ -175,10 +188,11 @@
     border-radius: 1.5rem;
     padding: 0.3rem 0.5rem;
     z-index: 10;
-@media screen and (max-width: 800px) {
-  // top:0;
-    left: -14rem;
-    
-  }
+
+    @media screen and (max-width: 800px) {
+      // top:0;
+      left: -3rem;
+      //todo: this should not be needed if we use flexbox and align-items: right; in a row
+    }
   }
 }

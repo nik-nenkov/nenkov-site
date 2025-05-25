@@ -111,12 +111,12 @@
   flex-direction: column;
   justify-content: space-between;
   aspect-ratio: 1/1.4;
-width: 40%;
-max-width: 800px;
-min-width: 384px;
-height: auto;
-max-height: 1120px;
-min-height: 537.6px;
+  width: 40%;
+  max-width: 800px;
+  min-width: 384px;
+  height: auto;
+  max-height: 1120px;
+  min-height: 537.6px;
   padding: 3rem 3rem 2.5rem 3rem;
   position: relative;
   overflow: hidden;
@@ -160,6 +160,7 @@ min-height: 537.6px;
   transition: background 0.2s, color 0.2s;
   margin: 0 0.5em;
 }
+
 .nav-btn:disabled {
   background: #f7f3ec;
   color: #b0a48a;
@@ -173,16 +174,43 @@ min-height: 537.6px;
     padding: 2rem 1.2rem;
   }
 }
+
 @media (max-width: 900px) {
-  .book-layout { flex-direction: column; }
-  .chapter-menu { width: 100%; min-height: unset; flex-direction: row; border-right: none; border-bottom: 1.5px solid #e0e4ef; padding: 1rem 0.5rem; }
-  .chapter-menu ul { display: flex; flex-wrap: wrap; gap: 0.5em 1em; }
-  .main-content { padding: 1.2rem 0 1rem 0; }
-  .header { max-width: 98vw; }
+  .book-layout {
+    flex-direction: column;
+  }
+
+  .chapter-menu {
+    width: 100%;
+    min-height: unset;
+    flex-direction: row;
+    border-right: none;
+    border-bottom: 1.5px solid #e0e4ef;
+    padding: 1rem 0.5rem;
+  }
+
+  .chapter-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em 1em;
+  }
+
+  .main-content {
+    padding: 1.2rem 0 1rem 0;
+  }
+
+  .header {
+    max-width: 98vw;
+  }
 }
+
 @media (max-width: 800px) {
-  .book-page { padding: 1.2rem 0.7rem; min-height: 220px; }
+  .book-page {
+    padding: 1.2rem 0.7rem;
+    min-height: 220px;
+  }
 }
+
 @media (max-width: 600px) {
   .book-page {
     max-width: 98vw;

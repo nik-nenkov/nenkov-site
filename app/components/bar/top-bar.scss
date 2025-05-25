@@ -112,7 +112,8 @@
     padding: 2rem;
     color: #111 !important;
     text-shadow: 0 0 13px white, 0 0 20px aquamarine, 0 0 30px whitesmoke, 0 0 50px aquamarine;
-    }
+  }
+
   h1 {
     font-size: 2.7rem;
     margin: 3rem auto;
@@ -121,6 +122,7 @@
     color: #1a237e;
     line-height: 1.1;
     text-shadow: 0 0 13px white, 0 0 18px aquamarine, 0 0 25px white, 0 0 30px aquamarine;
+
     @media (max-width: $screen-sm) {
       justify-content: top;
       vertical-align: top;
