@@ -10,4 +10,5 @@ export default [
   route("courses", "routes/courses/view-courses.tsx"),
   route("diagrams", "routes/diagrams/view-diagrams.tsx"),
   route("projects", "routes/projects/view-projects.tsx"),
+  route("services", "routes/services/view-services.tsx"),
 ] satisfies RouteConfig;

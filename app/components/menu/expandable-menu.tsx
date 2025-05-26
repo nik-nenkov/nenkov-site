@@ -14,9 +14,11 @@ export default function ExpandableMenu() {
             <nav className="menu">
                 <ul>
                     <li><Link to="/projects">{t("menuProjects")}</Link></li>
-                    <li><Link to="/courses">{t("menuCourses")}</Link></li>
+                    <li><Link to="/about">{t("menuAbout")}</Link></li>
+                    <li><Link to="/services">{t("menuServices")}</Link></li>
+                    {/* <li><Link to="/courses">{t("menuCourses")}</Link></li>
                     <li><Link to="/diagrams">{t("menuDiagrams")}</Link></li>
-                    <li><Link to="/books">{t("menuBooks")}</Link></li>
+                    <li><Link to="/books">{t("menuBooks")}</Link></li> */}
                 </ul>
             </nav>
         </div>

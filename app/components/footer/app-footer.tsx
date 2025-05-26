@@ -33,6 +33,7 @@ export default function AppFooter() {
               <li><Link to="/diagrams">{t("footerNavDiagrams")}</Link></li>
               <li><Link to="/projects">{t("footerNavProjects")}</Link></li>
               <li><Link to="/books">{t("footerNavBooks")}</Link></li>
+              <li><Link to="/services">{t("footerNavServices")}</Link></li>
             </ul>
           </div>
         </section>

@@ -74,7 +74,7 @@
   .menu {
     position: absolute;
     top: 50%;
-    right: calc(100% + 0.5rem); // Position the menu to the left of the button with a small gap
+    right: calc(100% + 1.25rem); // Position the menu to the left of the button with a small gap
     transform: translateY(-50%);
     display: flex;
     flex-direction: row; // Ensure items are in a row
@@ -98,6 +98,8 @@
       li {
         margin: 0;
         padding: 0;
+        width: 8rem;
+        gap: $social-gap-sm; // Adjust gap for small screens
 
         a {
           display: flex;
@@ -133,8 +135,17 @@
             padding: 0px 6px;
           }
         }
+
+        @media (max-width: 800px) {
+          width: 6rem; // Adjust width for smaller screens
+        }
       }
     }
+
+    @media (max-width: 800px) {
+      right: calc(100% + 0.5rem);
+    }
+
   }
 
   .menu-toggle:checked~.menu {
