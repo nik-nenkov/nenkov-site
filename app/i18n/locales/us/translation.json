@@ -122,7 +122,7 @@
   "aboutExperienceText": "Over the years, I have worked on a variety of projects, ranging from enterprise-level applications to cutting-edge cloud solutions. My expertise spans frontend and backend development, cloud and DevOps, system design, and technical consulting.",
   "aboutServicesTitle": "Services I Provide",
   "aboutServicesList": [
-    "Full-stack development for web and mobile applications",
+    "Full-stack development for web and desktop applications",
     "Cloud and DevOps solutions, including CI/CD pipelines",
     "System design and architecture consulting",
     "API development and integration",
@@ -133,11 +133,11 @@
   "aboutAchievementsList": [
     "Successfully leading development teams on complex projects",
     "Delivering high-quality software solutions under tight deadlines",
-    "Contributing to open-source projects and technical communities",
+    "Contributing to large-scale projects and technical communities",
     "Receiving recognition for innovative problem-solving and leadership"
   ],
   "aboutFuturePlansTitle": "Future Plans",
-  "aboutFuturePlansText": "I am constantly seeking new challenges and opportunities to grow. My future plans include exploring emerging technologies, expanding my expertise in AI and machine learning, and collaborating with global teams to create impactful solutions.",
+  "aboutFuturePlansText": "My future plans focus on designing scalable enterprise applications, integrating new technologies, solving complex problems, and delivering secure, high-quality solutions. I aim to take end-to-end responsibility for projects, ensure code quality through best practices and peer reviews, and stay updated with industry trends through continuous learning.",
   "aboutLookingTitle": "Looking for New Challenges",
   "aboutLookingText": "I am always open to exciting opportunities and collaborations. If you have a project or idea that aligns with my skills and interests, feel free to reach out!",
 
