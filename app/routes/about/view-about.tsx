@@ -24,7 +24,20 @@ export default function ViewAbout() {
       <TopBar title={t("aboutTitle")} />
       <section className="about-section">
         <p>{t("aboutWelcome")}</p>
-
+        <div
+          className="libutton"
+          onClick={() => window.open("https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=nik-nenkov", "_blank")}
+          style={{ cursor: "pointer" }}
+          tabIndex={0}
+          role="button"
+          onKeyPress={e => {
+            if (e.key === "Enter" || e.key === " ") {
+              window.open("https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=nik-nenkov", "_blank");
+            }
+          }}
+        >
+          <span>{t("followOnLinkedin")}</span>
+        </div>
         <h2>{t("aboutExperienceTitle")}</h2>
         <p>{t("aboutExperienceText")}</p>
 

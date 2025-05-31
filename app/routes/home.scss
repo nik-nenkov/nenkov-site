@@ -69,10 +69,12 @@ section {
       &::marker {
         color: $color-accent;
         font-size: $font-size-base;
+
         @media (prefers-color-scheme: dark) {
           color: rgba($color: #6f82b2, $alpha: 1.0);
         }
       }
+
       h3 {
         font-size: $font-size-h3;
         margin: $margin-md 0 0 0;
@@ -86,9 +88,10 @@ section {
           font-size: $font-size-base; // Adjusted for small screens
         }
 
-        a{
+        a {
           text-decoration: none;
           color: #733390;
+
           @media (prefers-color-scheme: dark) {
             color: rgba($color: #d77fff, $alpha: 1.0);
           }
@@ -105,6 +108,7 @@ section {
         @media (prefers-color-scheme: dark) {
           color: rgb(164, 164, 164);
         }
+
         @media (min-width: $screen-sm) {
           font-size: medium; // Adjusted for small screens
         }
@@ -134,9 +138,10 @@ section {
     padding-left: $padding-md;
     text-align: left;
 
-        @media (prefers-color-scheme: dark) {
-          border-left: $thick solid rgba($color: #6f82b2, $alpha: 1.0);
-        }
+    @media (prefers-color-scheme: dark) {
+      border-left: $thick solid rgba($color: #6f82b2, $alpha: 1.0);
+    }
+
     dt {
       font-weight: bold;
       font-size: $font-size-h3;
@@ -144,7 +149,7 @@ section {
       margin-top: $margin-sm;
 
       @media (prefers-color-scheme: dark) {
-            color: rgba($color: #6f82b2, $alpha: 1.0);
+        color: rgba($color: #6f82b2, $alpha: 1.0);
       }
 
       @media (max-width: $screen-sm) {
@@ -171,17 +176,47 @@ section {
     h2 {
       font-size: 2.5rem; // Larger headings
     }
+
     h3 {
       font-size: 1.6rem;
     }
+
     h4 {
       font-size: 1.1rem;
     }
-    p, ul li p, dl dd {
+
+    p,
+    ul li p,
+    dl dd {
       font-size: 1.15rem;
     }
+
     dl dt {
       font-size: 1.3rem;
+    }
+  }
+
+  .download-cv-btn {
+    display: inline-block;
+    margin: 2rem auto 1.5rem auto;
+    padding: 1.1rem 2.2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(90deg, #0e212b 0%, #135aa1 100%);
+    border: 2px solid goldenrod;
+    border-radius: 2.5rem;
+    box-shadow: 0 4px 18px gold(33, 150, 243, 0.15);
+    text-decoration: none;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+    cursor: pointer;
+    text-align: center;
+
+    &:hover,
+    &:focus {
+      background: linear-gradient(90deg, #135aa1 0%, #0e212b 100%);
+      transform: translateY(-2px) scale(1.03);
+      text-decoration: underline;
     }
   }
 }

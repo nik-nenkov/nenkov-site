@@ -7,7 +7,8 @@
   margin: 2rem auto;
   line-height: 1.7;
 
-  h1, h2 {
+  h1,
+  h2 {
     color: #333;
     margin-bottom: 1rem;
     text-align: center;
@@ -33,7 +34,7 @@
     background: #fff;
     border: 1px solid #e0e0e0;
     border-radius: 1.2rem;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
     padding: 1.5rem 1.2rem;
     width: 100%;
     max-width: 340px;
@@ -43,7 +44,7 @@
     box-sizing: border-box;
 
     &:hover {
-      box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
     }
 
     h2 {
@@ -57,6 +58,7 @@
       font-size: 1.05rem;
       color: #555;
       margin-bottom: 0.2rem;
+
       @media (prefers-color-scheme: dark) {
         color: #b3c7f9;
       }
@@ -82,6 +84,7 @@
       gap: 1.2rem;
       align-items: stretch;
     }
+
     .service-card {
       max-width: 100%;
       width: 100%;
@@ -92,10 +95,12 @@
       h2 {
         font-size: 1.15rem;
       }
+
       .desc {
         font-size: 0.95rem;
       }
     }
+
     .intro {
       font-size: 1rem;
     }
@@ -104,24 +109,57 @@
   @media (prefers-color-scheme: dark) {
     // background: #181c24;
 
-    h1, h2 {
+    h1,
+    h2 {
       color: #4addb8ca;
     }
-    .intro, .desc {
+
+    .intro,
+    .desc {
       color: #b3c7f9;
     }
+
     .service-card {
       background: #23283a;
       border-color: #3a4a6b;
+
       h2 {
         color: #4addb8ca;
       }
     }
+
     .contact-note {
       color: #e0e6f8;
+
       a {
         color: #4fc3f7;
       }
+    }
+  }
+
+  .book-meeting-btn {
+    display: block;
+    width: fit-content;
+    margin: 2rem auto 4.5rem auto;
+    padding: 1.1rem 2.2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(90deg, #0e212b 0%, #135aa1 100%);
+    border: 2px solid goldenrod;
+    border-radius: 2.5rem;
+    box-shadow: 0 4px 18px rgba(33, 150, 243, 0.15);
+    text-decoration: none;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+    cursor: pointer;
+    text-align: center;
+
+    &:hover,
+    &:focus {
+      background: linear-gradient(90deg, #135aa1 0%, #0e212b 100%);
+      box-shadow: 0 6px 24px rgba(33, 150, 243, 0.25);
+      transform: translateY(-2px) scale(1.03);
+      text-decoration: underline;
     }
   }
 }

@@ -26,6 +26,14 @@ export default function ViewServices() {
             <TopBar title={t("servicesTitle")} />
             <section className="services-section">
                 <p className="intro">{t("servicesIntro")}</p>
+                <a
+                    href="https://calendly.com/nik-nenkov"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="book-meeting-btn"
+                >
+                    <span role="img" aria-label="Book">📅</span>&nbsp;{t("bookMeeting")}
+                </a>
                 <div className="services-list">
                     {services.map((service, idx) => (
                         <div className="service-card" key={idx}>

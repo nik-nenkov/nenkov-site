@@ -32,6 +32,15 @@ export default function Home() {
         <section>
           <h2>{t("personalProfileTitle")}</h2>
           <p>{t("personalProfileText")}</p>
+          <a
+            href="https://app.enhancv.com/share/e40e3a5c/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="download-cv-btn"
+          >
+            <span role="img" aria-label="Download">📄</span>
+            &nbsp;{t("downloadResume")}
+          </a>
         </section>
         <section>
           <h2>{t("workExperienceTitle")}</h2>
@@ -51,21 +60,23 @@ export default function Home() {
           <ul>
             {educationList.map((item, idx) => (
               <li key={idx}>
-          <h3>
-            {item.url ? (
-              <a href={item.url} target="_blank" rel="noopener noreferrer">
-                {item.title}
-              </a>
-            ) : (
-              item.title
-            )}
-          </h3>
-          <h4>{item.period} | {item.location}</h4>
-          <div className="major">
-            <strong>{t("majorLabel")}: </strong>
-            {item.major}
-          </div>
-          <p>{item.desc}</p>
+                <h3>
+                  {item.url ? (
+                    <a href={item.url} target="_blank" rel="noopener noreferrer">
+                      {item.title}
+                    </a>
+                  ) : (
+                    item.title
+                  )}
+                </h3>
+                <h4>
+                  {item.period} | {item.location}
+                </h4>
+                <div className="major">
+                  <strong>{t("majorLabel")}: </strong>
+                  {item.major}
+                </div>
+                <p>{item.desc}</p>
               </li>
             ))}
           </ul>
