@@ -2,6 +2,7 @@ import React from "react";
 import { Meta } from "react-router";
 import "./view-contact.scss";
 import TopBar from "~/components/bar/top-bar";
+import { useTranslation } from "react-i18next";
 
 // SEO meta function
 export function meta() {
@@ -10,38 +11,52 @@ export function meta() {
     {
       name: "description",
       content:
-        "Contact Nikolay Nenkov, Full Stack Developer based in Sofia, Bulgaria. Email: nik@nenkov.site, Phone: +359 888 123 456.",
+        "Contact Nikolay Nenkov, Full Stack Developer based in Sofia, Bulgaria. Email: nik@nenkov.site, Phone: +359 890 138 750.",
     },
   ];
 }
 
 export default function ViewContact() {
+  const { t } = useTranslation();
   return (
     <>
       <Meta />
-      <TopBar />
+      <TopBar title={t("contactTitle")} />
       <section className="contact-section">
         <h1>Contact Me</h1>
         <div className="contact-details">
+          <p><strong>Николай Радославов Ненков</strong></p>
+          <p>Founder &amp; Software Consultant<br />Greenwall Business Systems Ltd</p>
           <p>
-            <strong>Email:</strong> nik@nenkov.site
+            <span role="img" aria-label="Phone">📞</span> <a href="tel:+359890138750">+359 890 138 750</a>
           </p>
           <p>
-            <strong>Phone:</strong> +359 888 123 456
+            <span role="img" aria-label="Website">🌐</span> <a href="https://www.nenkov.site" target="_blank" rel="noopener noreferrer">www.nenkov.site</a>
           </p>
           <p>
-            <strong>Location:</strong> Sofia, Bulgaria
+            <span role="img" aria-label="Email">✉️</span> <a href="mailto:nik@nenkov.site">nik@nenkov.site</a>
+          </p>
+          <p>
+            <span role="img" aria-label="LinkedIn">💻</span> <a href="https://www.linkedin.com/in/nik-nenkov" target="_blank" rel="noopener noreferrer">LinkedIn/nik-nenkov</a>
+          </p>
+          <p>
+            <span role="img" aria-label="Book a meeting">📅</span> <a href="https://calendly.com/nik-nenkov" target="_blank" rel="noopener noreferrer">Book an online meeting</a>
+          </p>
+          <p style={{ fontStyle: "italic", marginTop: "1.5rem" }}>
+            "Helping businesses grow through custom software solutions."
           </p>
         </div>
         <div className="map-container">
-          <iframe
-            title="Sofia, Bulgaria Map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23514.14184612491!2d23.3218675!3d42.6977082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa857d7b1a5b3f%3A0x400a01269bfaa90!2sSofia%2C%20Bulgaria!5e0!3m2!1sen!2sbg!4v1683641234567!5m2!1sen!2sbg"
+            <iframe
+            title="Bulgaria"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7493829.146579572!2d25.3185!3d42.9833!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a9d1e1c7b1b1b1%3A0x400a01269bfaa90!2sSofia%2C%20Bulgaria!5e0!3m2!1sen!2sbg!4v1683641234567!5m2!1sen!2sbg"
             width="100%"
             height="400"
             style={{ border: 0 }}
             allowFullScreen={true}
-          ></iframe>
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
         </div>
       </section>
     </>

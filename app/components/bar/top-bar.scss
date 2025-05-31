@@ -2,6 +2,7 @@
 
 .top-bar {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-image: url('/images/wallpaper.webp');
@@ -12,7 +13,21 @@
   padding: $header-padding-sm;
   box-shadow: $box-shadow-footer;
   position: relative;
-  height: 18.5rem !important; // Match .App-header min-height for small screens
+  height: 18.5rem !important;
+
+  // Stick the language switch to the top right
+  .language-switcher {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    z-index: 10;
+    margin: 0;
+
+    @media (max-width: $screen-sm) {
+      top: 0.5rem;
+      right: 0.5rem;
+    }
+  }
 
   .back-button {
     position: absolute;
@@ -21,7 +36,6 @@
     transform: translateY(-50%);
     width: $social-link-size-sm;
     height: $social-link-size-sm;
-    // border-radius: $border-radius-circle;
     background: linear-gradient(to bottom, rgba(213, 214, 216, 0.8), rgba(166, 200, 252, 0.8));
     border: $thin solid goldenrod;
     color: rgb(67, 64, 64);
@@ -46,29 +60,8 @@
       text-decoration: none;
     }
 
-    .house-icon {
-      font-size: 2rem;
-      color: #1a237e;
-      text-shadow:
-        0 0 6px aquamarine,
-        0 0 2px #fff,
-        0 0 12px #1a237e;
-      transition: color 0.2s, text-shadow 0.2s;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
     &:hover {
       background: linear-gradient(to bottom, rgba(166, 200, 252, 0.95), rgba(213, 214, 216, 0.95));
-    }
-
-    &:hover .house-icon {
-      color: turquoise;
-      text-shadow:
-        0 0 10px aquamarine,
-        0 0 4px #fff,
-        0 0 18px turquoise;
     }
 
     &:active {
@@ -101,10 +94,8 @@
       height: 6rem;
       margin: 0;
       padding: 0.5rem 0.2rem 0 0;
-
       color: $color-white;
       text-shadow: 0 0 6px black, 0 0 6px black, 0 0 16px aquamarine, 0 0 16px aquamarine;
-
     }
   }
 
@@ -136,8 +127,6 @@
     text-shadow: 0 0 13px white, 0 0 18px aquamarine, 0 0 25px white, 0 0 30px aquamarine;
 
     @media (max-width: $screen-sm) {
-      justify-content: top;
-      vertical-align: top;
       margin: 0 0 4rem 0;
       font-size: 1.5rem;
     }

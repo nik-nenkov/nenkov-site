@@ -1,37 +1,12 @@
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./app-header.scss";
 import ExpandableMenu from "../menu/expandable-menu";
-import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-
-// Language options with flag emojis
-const languages = [
-  { code: "bg", label: "Български", flag: "🇧🇬" },
-  { code: "us", label: "International", flag: "🇺🇸" },
-  // { code: "en", label: "English", flag: "🇬🇧" },
-  // { code: "fr", label: "Français", flag: "🇫🇷" },
-  // { code: "de", label: "Deutsch", flag: "🇩🇪" },
-  // { code: "el", label: "Ελληνικά", flag: "🇬🇷" },
-  // { code: "es", label: "Español", flag: "🇪🇸" },
-];
+import LangSwitch from "../lang/lang-switch";
 
 export default function AppHeader() {
-  const { t, i18n } = useTranslation();
-  const [lang, setLang] = useState(i18n.language || "us");
-  const [showLangList, setShowLangList] = useState(false);
-
-  // Sync local lang state with i18n language
-  useEffect(() => {
-    setLang(i18n.language);
-  }, [i18n.language]);
-
-  const selectedLang = languages.find((l) => l.code === lang);
-
-  const handleLangChange = (code: string) => {
-    i18n.changeLanguage(code);
-    setShowLangList(false);
-  };
+  const { t } = useTranslation();
 
   return (
     <header className="App-header">
@@ -60,52 +35,9 @@ export default function AppHeader() {
               nik@nenkov.site
             </a>
           </p>
-          {/* <p>
-            <FontAwesomeIcon icon={faPhone} />{" "}
-            <a href="tel:+359890138750">
-              +359 890 138 750
-            </a>
-          </p> */}
         </div>
       </div>
-      {/* Language Switcher */}
-      <div
-        className="language-switcher"
-        onMouseEnter={() => setShowLangList(true)}
-        onMouseLeave={() => setShowLangList(false)}
-      >
-        <button
-          className="lang-btn active"
-          type="button"
-          title={selectedLang?.label}
-        >
-          <span
-            className="flag"
-            aria-label={selectedLang?.label}
-          >
-            {selectedLang?.flag}
-          </span>
-        </button>
-        {showLangList && (
-          <div className="lang-list">
-            {languages
-              .filter((l) => l.code !== lang)
-              .map((l) => (
-                <button
-                  key={l.code}
-                  className="lang-btn"
-                  onClick={() => handleLangChange(l.code)}
-                  title={l.label}
-                  type="button"
-                >
-                  <span className="flag" aria-label={l.label}>
-                    {l.flag}
-                  </span>
-                </button>
-              ))}
-          </div>
-        )}
-      </div>
+      <LangSwitch />
       <ExpandableMenu />
     </header>
   );

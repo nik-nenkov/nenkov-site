@@ -1,0 +1,60 @@
+.language-switcher {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 1rem;
+
+  @media screen and (max-width: 800px) {
+    margin-top: -0.25rem;
+    margin-right: -0.25rem;
+  }
+
+  .lang-btn {
+    background: none;
+    border: none;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    text-shadow: 0 0 3px black, 0 0 4px black, 0 0 12px white, 0 0 16px white;
+    cursor: pointer;
+    transition: border 0.2s, box-shadow 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    padding: 0;
+    margin-right: 0.2rem;
+
+    @media screen and (max-width: 800px) {
+      font-size: 1.2rem;
+      width: 2.2rem;
+      height: 2.2rem;
+    }
+
+    &.active,
+    &:hover {
+      font-size: 2rem;
+
+      @media screen and (max-width: 800px) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .lang-list {
+    position: absolute;
+    top: -0.3rem;
+    left: -4rem;
+    display: flex;
+    gap: 0.3rem;
+    background: none;
+    border-radius: 1.5rem;
+    padding: 0.3rem 0.5rem;
+    z-index: 10;
+
+    @media screen and (max-width: 800px) {
+      left: -3rem;
+    }
+  }
+}

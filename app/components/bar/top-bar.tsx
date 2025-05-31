@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./top-bar.scss";
+import LangSwitch from "../lang/lang-switch";
 
 interface TopBarProps {
   title?: string;
@@ -15,6 +16,7 @@ export default function TopBar({ title = "Welcome to My Portfolio" }: TopBarProp
         <h3 className="title">Nikolay Nenkov CV / Presentation Website</h3>
         <h1>{title}</h1>
       </div>
+      <LangSwitch />
     </div>
   );
 }
