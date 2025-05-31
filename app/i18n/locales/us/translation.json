@@ -117,29 +117,26 @@
   "footerCopyright": "© 2025 Nikolay Nenkov",
 
   "aboutTitle": "About Nik",
-  "aboutWelcome": "Welcome to my professional website! My name is Nikolay Nenkov, and I am a passionate full-stack developer with extensive experience in building robust, scalable, and innovative solutions. This website serves as a showcase of my professional journey, achievements, and the services I provide.",
-  "aboutExperienceTitle": "Professional Experience",
-  "aboutExperienceText": "Over the years, I have worked on a variety of projects, ranging from enterprise-level applications to cutting-edge cloud solutions. My expertise spans frontend and backend development, cloud and DevOps, system design, and technical consulting.",
-  "aboutServicesTitle": "Services I Provide",
+  "aboutWelcome": "Hello, my name is Nikolay Nenkov. I help small and medium businesses harness the power of modern technology to work faster, smarter, and with fewer errors. I have over a decade of industry experience, including corporate projects, cloud systems, and building scalable applications from scratch.",
+  "aboutExperienceTitle": "What I Can Do For You",
+  "aboutExperienceText": "I develop custom web applications, automate tedious processes, and help with digital transformation and organization in your business. If things are still done by hand, calls are made by phone, or time is wasted searching for files – I can make everything much easier.",
+  "aboutServicesTitle": "How I Work",
   "aboutServicesList": [
-    "Full-stack development for web and desktop applications",
-    "Cloud and DevOps solutions, including CI/CD pipelines",
-    "System design and architecture consulting",
-    "API development and integration",
-    "Technical mentoring and team support"
+    "I listen carefully and offer clear solutions",
+    "I explain technical matters in plain language",
+    "I work on your side – for results, not just noise"
   ],
-  "aboutAchievementsTitle": "Achievements",
-  "aboutAchievementsIntro": "Throughout my career, I have achieved several milestones, including:",
+  "aboutAchievementsTitle": "What Sets Me Apart",
+  "aboutAchievementsIntro": "A few reasons why clients come back to me:",
   "aboutAchievementsList": [
-    "Successfully leading development teams on complex projects",
-    "Delivering high-quality software solutions under tight deadlines",
-    "Contributing to large-scale projects and technical communities",
-    "Receiving recognition for innovative problem-solving and leadership"
+    "I speak the language of business, not just developers",
+    "I work fast, but never compromise on quality",
+    "I have a company, a car, and real-world experience"
   ],
-  "aboutFuturePlansTitle": "Future Plans",
-  "aboutFuturePlansText": "My future plans focus on designing scalable enterprise applications, integrating new technologies, solving complex problems, and delivering secure, high-quality solutions. I aim to take end-to-end responsibility for projects, ensure code quality through best practices and peer reviews, and stay updated with industry trends through continuous learning.",
-  "aboutLookingTitle": "Looking for New Challenges",
-  "aboutLookingText": "I am always open to exciting opportunities and collaborations. If you have a project or idea that aligns with my skills and interests, feel free to reach out!",
+  "aboutFuturePlansTitle": "If You Want...",
+  "aboutFuturePlansText": "...to clear the chaos, digitize processes, or just discuss an idea – write to me. Sometimes what seems expensive and complicated can be solved in 2 weeks with a reasonable budget.",
+  "aboutLookingTitle": "Contact Me",
+  "aboutLookingText": "Write to me if you want to discuss something specific – the first meeting is free, and the benefit from it could save you a lot of headaches.",
 
   "menuProjects": "History",
   "menuAbout": "About",
@@ -156,5 +153,51 @@
   "menuNikNenkov": "Nik Nenkov",
   "menuCourses": "Courses",
   "menuDiagrams": "Diagrams",
-  "menuBooks": "Books"
+  "menuBooks": "Books",
+
+  "servicesTitle": "Services",
+  "servicesIntro": "I help businesses like yours save time, reduce mistakes, and grow with the right technology. Here’s how I can help you:",
+  "servicesList": [
+    {
+      "title": "Full-Stack Development",
+      "desc": "Design and build robust web and mobile applications for your business, from user-friendly interfaces to secure backends. Modernize old systems or create new solutions tailored to your needs."
+    },
+    {
+      "title": "API Development & Integration",
+      "desc": "Integrate payment systems, booking tools, and other services to make your business more flexible and connected."
+    },
+    {
+      "title": "Automation & Process Optimization",
+      "desc": "Automate repetitive tasks, streamline workflows, and improve efficiency in your business operations."
+    },
+    {
+      "title": "Custom Websites & Online Stores",
+      "desc": "Get a beautiful, easy-to-use website or online shop that brings you more customers and makes your business stand out."
+    },
+    {
+      "title": "Cloud & DevOps Solutions",
+      "desc": "Set up and automate cloud infrastructure, backups, and deployments so your business runs smoothly and securely, with less manual work."
+    },
+    {
+      "title": "System Design & Integration",
+      "desc": "Connect your business tools and systems, automate workflows, and ensure everything works together efficiently."
+    },
+    {
+      "title": "Software Testing & Quality Assurance",
+      "desc": "Ensure your software is reliable and bug-free with thorough testing and quality checks, so you can focus on growing your business."
+    },
+    {
+      "title": "Technical Consulting & Team Support",
+      "desc": "Get clear advice, project reviews, and team training in plain language. I help you choose the right technology and support your staff."
+    },
+    {
+      "title": "Data & Reporting",
+      "desc": "Turn your business data into useful reports and dashboards, so you can make better decisions and track what matters."
+    },
+    {
+      "title": "Tutoring & Teaching",
+      "desc": "Personalized lessons in math, software, and science for students, professionals, and business owners. I also consult managers and companies to bridge knowledge gaps."
+    }
+  ],
+  "servicesContactNote": "Ready to make your business easier and more successful? <a href=\"mailto:nenkov.nik@gmail.com\">Use email</a> for a free first consultation."
 }

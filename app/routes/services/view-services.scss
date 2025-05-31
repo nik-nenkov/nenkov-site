@@ -1,15 +1,22 @@
 @use "/app/styles/constants" as *;
 
 .services-section {
-  padding: 2rem;
-  max-width: $scr-width-md;
-  margin: 0 auto;
+  padding: 2rem 1rem;
   font-family: $font-primary;
+  max-width: 900px;
+  margin: 2rem auto;
+  line-height: 1.7;
+
+  h1, h2 {
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
 
   .intro {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
+    font-size: 1.2rem;
     color: #444;
+    margin-bottom: 2rem;
     text-align: center;
   }
 
@@ -18,44 +25,40 @@
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .service-card {
-    background: $color-background-light;
-    border: $thin solid $color-accent;
-    border-radius: $border-radius-md;
-    box-shadow: $box-shadow-footer;
-    padding: 1.5rem;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 1.2rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    padding: 1.5rem 1.2rem;
     width: 100%;
-    max-width: 420px;
-    margin-bottom: 2rem;
+    max-width: 340px;
+    margin-bottom: 1.5rem;
+    text-align: left;
     transition: box-shadow 0.2s;
+    box-sizing: border-box;
 
     &:hover {
       box-shadow: 0 4px 24px rgba(0,0,0,0.12);
     }
 
     h2 {
-      font-size: 1.3rem;
-      color: $color-heading-dark;
+      font-size: 1.25rem;
+      color: #2a3b5d;
       margin-bottom: 0.5rem;
+      text-align: left;
     }
 
     .desc {
-      font-size: 1rem;
+      font-size: 1.05rem;
       color: #555;
-      margin-bottom: 0.7rem;
-    }
-
-    ul {
-      list-style: disc;
-      padding-left: 1.2rem;
-      margin: 0;
-
-      li {
-        font-size: 0.98rem;
-        color: #333;
-        margin-bottom: 0.3rem;
+      margin-bottom: 0.2rem;
+      @media (prefers-color-scheme: dark) {
+        color: #b3c7f9;
       }
     }
   }
@@ -63,36 +66,55 @@
   .contact-note {
     text-align: center;
     margin-top: 2.5rem;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
 
     a {
-      color: $color-accent;
+      color: #007acc;
       text-decoration: underline;
     }
   }
 
-  @media (max-width: $screen-sm) {
+  @media (max-width: 700px) {
+    padding: 0.5rem 0.2rem;
+
     .services-list {
       flex-direction: column;
-      gap: 1.5rem;
+      gap: 1.2rem;
+      align-items: stretch;
     }
     .service-card {
       max-width: 100%;
-      padding: 1rem;
+      width: 100%;
+      padding: 1rem 0.7rem;
+      margin-bottom: 1rem;
+      box-sizing: border-box;
+
+      h2 {
+        font-size: 1.15rem;
+      }
+      .desc {
+        font-size: 0.95rem;
+      }
+    }
+    .intro {
+      font-size: 1rem;
     }
   }
 
   @media (prefers-color-scheme: dark) {
-    background: #181c24;
+    // background: #181c24;
 
-    .intro, .desc, li {
-      color: #e0e6f8;
+    h1, h2 {
+      color: #4addb8ca;
+    }
+    .intro, .desc {
+      color: #b3c7f9;
     }
     .service-card {
-      background: $color-background-dark;
-      border-color: $color-accent;
+      background: #23283a;
+      border-color: #3a4a6b;
       h2 {
-        color: $color-heading-light;
+        color: #4addb8ca;
       }
     }
     .contact-note {
